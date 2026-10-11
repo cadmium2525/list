@@ -1,0 +1,22 @@
+{
+  "id": "./",
+  "name": "CADMIUM — あそびのアトリエ",
+  "short_name": "CADMIUM",
+  "description": "Webゲームとツールをタグで探せる、cadmium2525の作品ギャラリー。",
+  "lang": "ja",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f5ef",
+  "theme_color": "#f6f5ef",
+  "categories": ["entertainment", "utilities"],
+  "icons": [
+    {"src":"assets/icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
+    {"src":"assets/icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any"},
+    {"src":"assets/icons/maskable-512.png","sizes":"512x512","type":"image/png","purpose":"maskable"}
+  ],
+  "shortcuts": [
+    {"name":"ゲームを探す","url":"./?kind=game#collection"},
+    {"name":"ツールを探す","url":"./?kind=tool#collection"}
+  ]
+}

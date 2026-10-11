@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f5ef">
+  <meta name="description" content="ひらめきを、あそびに。cadmium2525がつくったWebゲームとツールの作品ギャラリー。イラストを眺めながら、タグやキーワードでお気に入りを探そう。">
+  <meta property="og:title" content="CADMIUM — あそびのアトリエ">
+  <meta property="og:description" content="あそびも、ちょっと便利も。12のWebゲームとツールをイラストとタグで探そう。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cadmium2525.github.io/list/">
+  <meta property="og:image" content="https://cadmium2525.github.io/list/assets/atelier-hero.webp">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="CADMIUM">
+  <title>CADMIUM — あそびのアトリエ</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mobile.css">
+  <script src="projects.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="pwa.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#collection">作品一覧へスキップ</a>
+  <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v16m-7-7 7 7 7-7"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M10 6h10M10 12h10M10 18h10M4 6h1M4 12h1M4 18h1"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.3-4.3-2.2-6-2.7m12 5v-3.5c0-1 .1-1.5-.5-2.1 3-.4 6-1.5 6-6.4 0-1.4-.5-2.6-1.3-3.5.1-.4.6-1.8-.2-3.5 0 0-1.1-.4-3.6 1.3a12.4 12.4 0 0 0-6.8 0C6.1 1.9 5 2.3 5 2.3c-.8 1.7-.3 3.1-.2 3.5C4 6.7 3.5 7.9 3.5 9.3c0 4.9 3 6 6 6.4-.5.5-.6 1.2-.6 2.1v3.5"/></symbol>
+    <symbol id="i-dice" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M8 8h.01M16 8h.01M12 12h.01M8 16h.01M16 16h.01" stroke-width="3" stroke-linecap="round"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 40 40"><path d="m20 0 4.2 12.5L35 5l-7.5 10.8L40 20l-12.5 4.2L35 35l-10.8-7.5L20 40l-4.2-12.5L5 35l7.5-10.8L0 20l12.5-4.2L5 5l10.8 7.5Z" fill="currentColor" stroke="none"/></symbol>
+  </svg>
+
+  <header class="site-header wrap">
+    <a class="brand" href="#top" aria-label="CADMIUM ホーム">
+      <span class="brand-mark"><svg><use href="#i-spark"/></svg></span>
+      <span class="brand-type">CADMIUM<span>WEB PLAYGROUND</span></span>
+    </a>
+    <nav aria-label="メインナビゲーション">
+      <a class="nav-link" href="#collection">作品を探す</a>
+      <a class="nav-link" href="#about">アトリエについて</a>
+      <a class="header-github" href="https://github.com/cadmium2525" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon"><use href="#i-arrow"/></svg><span class="sr-only">（新しいタブで開く）</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span>A LITTLE SPACE FOR BIG IDEAS</div>
+        <h1 id="hero-title">ひらめきを、<br><span class="highlight">あそび</span>に<span class="hero-period">。</span></h1>
+        <p class="hero-description">らくがきが動き出したり、モンスターが育ったり。<br class="desktop-break">あそびも、ちょっと便利も。ブラウザから広がる実験室。</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#collection">作品をのぞいてみる<svg class="icon"><use href="#i-down"/></svg></a>
+          <button class="install-button" id="install-app" type="button">＋ ホーム画面に追加</button>
+        </div>
+        <div class="hero-meta"><span class="mini-rule"></span> GAMES, TOOLS & A BIT OF CURIOSITY</div>
+      </div>
+      <div class="hero-visual">
+        <span class="visual-caption">THE CREATIVE PLAYROOM / VOL. 01</span>
+        <img src="assets/atelier-hero.webp" alt="ゲームコントローラー、鉛筆、小さなモンスターとパズルを並べた、遊びのアトリエのイラスト" width="1100" height="733" fetchpriority="high">
+        <div class="play-stamp" aria-hidden="true"><svg><use href="#i-spark"/></svg><span>JUST<br>PLAY.</span></div>
+        <span class="visual-footnote">Made of curiosity.</span>
+      </div>
+    </section>
+
+    <div class="section-divider wrap"><span>SCROLL TO EXPLORE</span><svg class="icon"><use href="#i-down"/></svg><span id="work-total">12 LITTLE DISCOVERIES</span></div>
+
+    <section class="collection wrap" id="collection" aria-labelledby="collection-title">
+      <div class="collection-heading">
+        <div><div class="eyebrow section-eyebrow">THE COLLECTION <span class="small-spark">✳</span></div><h2 id="collection-title">作品を見つけよう<span>。</span></h2></div>
+        <a class="random-link" id="random-link" href="https://cadmium2525.github.io/sumaraku/" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-dice"/></svg>おまかせで開く<svg class="icon arrow"><use href="#i-arrow"/></svg><span class="sr-only">（新しいタブで開く）</span></a>
+      </div>
+      <p class="collection-intro">気になるタグを選んで、次のお気に入りを探してみて。</p>
+
+      <div class="discovery-panel">
+        <div class="kind-filters" id="kind-filters" role="group" aria-label="作品の種類で絞り込み"><button class="kind-button active" type="button" data-kind="" aria-pressed="true">すべて <span class="kind-count">12</span></button><button class="kind-button" type="button" data-kind="game" aria-pressed="false">ゲーム <span class="kind-count">9</span></button><button class="kind-button" type="button" data-kind="tool" aria-pressed="false">ツール <span class="kind-count">3</span></button></div>
+        <div class="tag-filters" id="tag-filters" role="group" aria-label="作品のタグで絞り込み"></div>
+        <div class="toolbar">
+          <div class="search-field"><svg class="icon"><use href="#i-search"/></svg><label class="sr-only" for="search">作品名・紹介文・タグで検索</label><input id="search" type="search" placeholder="作品名・キーワードで探す" autocomplete="off" maxlength="100"><button id="clear-search" class="clear-search" type="button" aria-label="検索をクリア" hidden>×</button></div>
+          <div class="toolbar-end">
+            <span id="result-count" class="result-count" role="status" aria-live="polite" aria-atomic="true">全12作品</span>
+            <label class="sort-control" for="sort"><span class="sr-only">作品の並び順</span><select id="sort"><option value="default">掲載順</option><option value="name-asc">名前順 ↑</option><option value="name-desc">名前順 ↓</option></select><span class="select-chevron" aria-hidden="true">⌄</span></label>
+            <div class="view-controls" role="group" aria-label="作品の表示形式"><button class="view-button active" id="grid-view" type="button" aria-label="カード表示" aria-pressed="true"><svg class="icon"><use href="#i-grid"/></svg></button><button class="view-button" id="list-view" type="button" aria-label="リスト表示" aria-pressed="false"><svg class="icon"><use href="#i-list"/></svg></button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="active-filter-info" id="filter-info" hidden><span id="filter-summary"></span><button type="button" id="reset-filters">条件をリセット <span aria-hidden="true">×</span></button></div>
+      <p id="offline-notice" class="offline-notice" role="status" hidden>オフラインです。保存済みの一覧を表示しています。作品を開くにはネット接続が必要です。</p>
+      <div class="project-grid" id="project-grid"></div>
+      <div class="empty-state" id="empty-state" hidden><span class="empty-spark" aria-hidden="true">✳</span><h3>まだ見つからないみたい。</h3><p>別のキーワードやタグでもう一度探してみてください。</p><button class="primary-button" type="button" id="empty-reset">すべての作品を見る<svg class="icon"><use href="#i-arrow"/></svg></button></div>
+      <noscript><p class="noscript-note">検索・並び替えにはJavaScriptを有効にしてください。各作品へのリンクはこのまま開けます。</p><ul><li><a href="https://cadmium2525.github.io/sumaraku/" target="_blank" rel="noopener noreferrer">ラクガキ大乱闘</a></li><li><a href="https://cadmium2525.github.io/-mic/" target="_blank" rel="noopener noreferrer">モンスターブリーダー：ガッツファクトリー</a></li><li><a href="https://cadmium2525.github.io/rakugaction/" target="_blank" rel="noopener noreferrer">ラクガキアクション</a></li><li><a href="https://cadmium2525.github.io/punching/" target="_blank" rel="noopener noreferrer">ぶっ飛ばせ！ムカつくアイツ！</a></li><li><a href="https://cadmium2525.github.io/tomoshibi/" target="_blank" rel="noopener noreferrer">灯のルミナ</a></li><li><a href="https://cadmium2525.github.io/aurapuzzle_-adventure/" target="_blank" rel="noopener noreferrer">オーラコネクト・バトル</a></li><li><a href="https://cadmium2525.github.io/monster_collection/" target="_blank" rel="noopener noreferrer">モンスターコンストラクション</a></li><li><a href="https://cadmium2525.github.io/sumamama/docs/" target="_blank" rel="noopener noreferrer">大乱闘スマママブラザーズ</a></li><li><a href="https://cadmium2525.github.io/endless_monsters/" target="_blank" rel="noopener noreferrer">円盤石鉱山 -Monolith Mine-</a></li><li><a href="https://cadmium2525.github.io/infographic/" target="_blank" rel="noopener noreferrer">Infographic Canvas Maker v8</a></li><li><a href="https://cadmium2525.github.io/giftntool/" target="_blank" rel="noopener noreferrer">LMF ギフトンツール</a></li><li><a href="https://cadmium2525.github.io/C_tools/" target="_blank" rel="noopener noreferrer">Cツール</a></li></ul></noscript>
+      <p class="collection-footnote"><span aria-hidden="true">↗</span> 作品とGitHubへのリンクは、新しいタブで開きます。</p>
+    </section>
+
+    <section class="about-section wrap" id="about" aria-labelledby="about-title">
+      <div class="about-decoration" aria-hidden="true"><svg><use href="#i-spark"/></svg><span>KEEP<br>MAKING.</span></div>
+      <div class="about-copy"><div class="eyebrow">BEHIND THE PLAYGROUND</div><h2 id="about-title">つくって、ためして、<br>またつくる。</h2><p>ここは、cadmium2525がつくったWeb作品のアトリエ。<br>「こんなのあったら面白そう」から生まれたゲームやツールを、<br class="desktop-break">少しずつ並べていきます。</p><a class="about-link" href="https://github.com/cadmium2525" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg>つくり手のGitHubへ<svg class="icon"><use href="#i-arrow"/></svg><span class="sr-only">（新しいタブで開く）</span></a></div>
+      <div class="about-aside"><span class="handwritten">a work in play.</span><p>今日のひらめきが、<br>明日のあそびになる。</p><span class="about-number">2525<span>by cadmium</span></span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap"><span class="footer-wordmark">CADMIUM<span>あそびのアトリエ</span></span><span class="footer-credit">© <span id="copyright-year">2026</span> cadmium2525</span><a href="#top" class="back-top">ページの先頭へ <svg class="icon"><use href="#i-arrow"/></svg></a></footer>
+  <dialog class="install-dialog" id="install-dialog" aria-labelledby="install-title"><button class="dialog-close" type="button" id="close-install-dialog" aria-label="説明を閉じる">×</button><img src="assets/icons/icon-192.png" width="60" height="60" alt=""><h2 id="install-title">ポケットに、アトリエを。</h2><p>ホーム画面から、いつでも作品を探せます。</p><button class="primary-button" id="native-install" type="button" hidden>アプリをインストール</button><ol><li><strong>iPhone / iPad</strong><br>Safariの共有メニュー →「ホーム画面に追加」。</li><li><strong>Android</strong><br>Chromeのメニュー →「ホーム画面に追加」または「アプリをインストール」。</li></ol><p class="install-small" id="offline-ready-status" role="status" aria-live="polite">オフライン表示を準備しています。</p><p class="install-small">リンク先の各作品を開くには通信が必要です。</p></dialog>
+</body>
+</html>
