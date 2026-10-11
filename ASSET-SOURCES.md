@@ -1,6 +1,6 @@
 # 画像と紹介文の出典
 
-紹介文と作品名は、ユーザーが提示した各公開ゲームのHTML title・description・READMEを確認して作成しました。すべてゲーム作品です。
+紹介文と作品名は、ユーザーが提示した各公開ゲーム・ツールのHTML title・description・READMEを確認して作成しました。
 
 | ファイル | 出典 |
 |---|---|
@@ -19,11 +19,12 @@ atelier-hero.webpはアトリエの創作活動を表現したオリジナルイ
 
 ## 追加5作品
 
-- sumamama-icon.webp: https://cadmium2525.github.io/sumamama/docs/icons/icon-512.png の公式アイコン。
-- giftntool-icon.webp: https://cadmium2525.github.io/giftntool/icons/icon-512x512.png の公式アイコン。
+- sumamama-cover.webp: 対戦するファイターを描いた、作品内容をもとにした生成イメージイラスト。
+- giftntool-cover.webp: ドラゴン・星・系譜のメダリオンで相性探索を表した生成イメージイラスト。
 - endless-monsters-cover.webp: https://cadmium2525.github.io/endless_monsters/ の公開初期画面。所持資産0の状態を撮影。
 - infographic-cover.webp: https://cadmium2525.github.io/infographic/ の公開初期画面。空のキャンバスとレイヤー0の状態を撮影。
-- c-tools-cover.webp: https://cadmium2525.github.io/C_tools/ の公開初期画面。秘伝カウンターの育成記録0の状態を撮影。
+- c-tools-cover-v2.webp: 手帳・電卓・虫眼鏡で育成の記録・計算・分析を表した生成イメージイラスト。
 
 元ゲームのHELP画面画像はCツール自身の画面ではないため、カバーには使用していません。
+スマママ・ギフトン・Cツールのカバーは、2026-10-11にユーザーの依頼で公式アイコン・初期画面からイメージイラストへ差し替えました。生成モードと最終プロンプトはIMAGE-PROMPT.mdに記録しています。
 PNG/JPEGを配信用WebPに変換し、トップは横1100px、その他は最大横960pxに縮小しました。

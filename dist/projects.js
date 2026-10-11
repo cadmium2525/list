@@ -109,8 +109,8 @@ window.CADMIUM_PROJECTS = [
     tags: ['アクション', '3D', '対戦'],
     url: 'https://cadmium2525.github.io/sumamama/docs/',
     github: 'https://github.com/cadmium2525/sumamama',
-    image: 'assets/sumamama-icon.webp', imageAlt: '大乱闘スマママブラザーズの公式キャラクターアイコン',
-    color: '#292039', coverStyle: 'official-icon'
+    image: 'assets/sumamama-cover.webp', imageAlt: '紫の長耳ファイターと黄色いロボットが向き合う、スマママブラザーズのイメージイラスト',
+    color: '#dae7dd', coverStyle: 'illustration'
   },
   {
     order: 9, slug: 'endless_monsters', kind: 'game',
@@ -142,8 +142,8 @@ window.CADMIUM_PROJECTS = [
     tags: ['育成支援', '相性計算', '最適化'],
     url: 'https://cadmium2525.github.io/giftntool/',
     github: 'https://github.com/cadmium2525/giftntool',
-    image: 'assets/giftntool-icon.webp', imageAlt: 'LMF ギフトンツールの赤いモンスターと星を描いた公式アイコン',
-    color: '#263650', coverStyle: 'official-icon'
+    image: 'assets/giftntool-cover.webp', imageAlt: '赤いドラゴンと星、つながる系譜のメダリオンで相性探索を表したイメージイラスト',
+    color: '#e7dae7', coverStyle: 'illustration'
   },
   {
     order: 12, slug: 'C_tools', kind: 'tool',
@@ -153,7 +153,7 @@ window.CADMIUM_PROJECTS = [
     tags: ['育成支援', '計算', '記録'],
     url: 'https://cadmium2525.github.io/C_tools/',
     github: 'https://github.com/cadmium2525/C_tools',
-    image: 'assets/c-tools-cover.webp', imageAlt: 'Cツールの秘伝カウンターで発現した秘伝を記録する初期画面',
-    color: '#d9e7ee', coverStyle: 'interface'
+    image: 'assets/c-tools-cover-v2.webp', imageAlt: '星を記録する手帳と電卓、虫眼鏡で育成の記録と計算を表したイメージイラスト',
+    color: '#f3e7d5', coverStyle: 'illustration'
   }
 ];

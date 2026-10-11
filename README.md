@@ -38,6 +38,6 @@ mainへのpushで `.github/workflows/pages.yml` が検証・ビルドし、`dist
 
 ## 画像
 
-既存ゲーム画像・公式アイコン・公開初期画面を使用しています。生成画像のプロンプトは `IMAGE-PROMPT.md`、出典は `ASSET-SOURCES.md` を参照してください。配信用画像をWebPに軽量化しています。
+既存ゲーム画像・公開初期画面・作品内容を表す生成イラストを使用しています。生成画像のプロンプトは `IMAGE-PROMPT.md`、出典は `ASSET-SOURCES.md` を参照してください。配信用画像をWebPに軽量化しています。
 
 `scripts/optimise-assets.cjs` は制作時の任意ツール（sharpが必要）です。GitHub Pagesのビルドや日常の作品追加には不要です。

@@ -4,7 +4,7 @@ const path = require('node:path');
 const sharp = require(process.env.CADMIUM_SHARP || 'sharp');
 const assets = path.resolve(__dirname, '../dist/assets');
 (async () => {
-  const names = ['atelier-hero.png','sumaraku-cover.png','mic-cover.png','sumamama-icon.png','giftntool-icon.png','endless-monsters-cover.jpg','infographic-cover.jpg','c-tools-cover.jpg'];
+  const names = ['atelier-hero.png','sumaraku-cover.png','mic-cover.png','sumamama-cover.png','giftntool-cover.png','c-tools-cover-v2.png','endless-monsters-cover.jpg','infographic-cover.jpg'];
   for (const name of names) {
     const input = path.join(assets, name);
     if (!fs.existsSync(input)) continue;
