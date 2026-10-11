@@ -19,7 +19,7 @@ jobs:
       - name: Build offline cache
         run: node scripts/build-pwa.mjs
       - name: Check catalogue and offline behaviour
-        run: node --test tests/pwa.test.mjs
+        run: node --test tests/*.test.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:

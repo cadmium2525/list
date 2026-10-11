@@ -6,6 +6,9 @@
   const search = $('search');
   const sort = $('sort');
   const filters = $('tag-filters');
+  const popularity = window.CADMIUM_POPULARITY;
+  let popularityState = popularity?.getState() || { status: 'unavailable', counts: null, updatedAt: null };
+  let popularityRefresh;
   const normalise = text => text.normalize('NFKC').toLocaleLowerCase('ja').replace(/[\u30a1-\u30f6]/g, c => String.fromCharCode(c.charCodeAt(0) - 0x60));
   const kindOf = project => project.kind || 'game';
   const tagCounts = new Map();
@@ -19,7 +22,7 @@
   let expandedTags = false;
   let view = params.get('view') === 'list' ? 'list' : 'grid';
   search.value = (params.get('q') || '').slice(0, 100);
-  sort.value = ['name-asc', 'name-desc'].includes(params.get('sort')) ? params.get('sort') : 'default';
+  sort.value = ['name-asc', 'name-desc', 'popular'].includes(params.get('sort')) ? params.get('sort') : 'default';
   let visibleProjects = [];
 
   function make(tag, className, text) {
@@ -45,13 +48,56 @@
     if (label) link.setAttribute('aria-label', label + '（新しいタブで開く）');
     return link;
   }
+  function openCount(slug) {
+    const count = popularityState.counts?.[slug];
+    return Number.isSafeInteger(count) && count >= 0 ? count : null;
+  }
+  function updatePopularityNotice() {
+    const notice = $('popularity-notice');
+    notice.hidden = sort.value !== 'popular';
+    if (notice.hidden) return;
+    const description = '人気順は、この一覧から各作品を開いた回数です。同じブラウザからは、1作品につき1日1回まで数えます（日本時間）。';
+    let status = '';
+    if (popularityState.status === 'loading') {
+      status = popularityState.counts ? '最新の回数を確認しています。保存済みの回数で並べています。' : '回数を読み込んでいます。取得できるまでは掲載順で表示します。';
+    } else if (popularityState.status === 'cached') {
+      const updated = new Date(popularityState.updatedAt);
+      const date = popularityState.updatedAt && !Number.isNaN(updated.getTime())
+        ? updated.toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })
+        : '';
+      status = '保存済みの回数で並べています。' + (date ? '最終更新：' + date + '（日本時間）。' : '');
+    } else if (popularityState.status === 'unavailable' || !popularityState.counts) {
+      status = popularityState.counts ? '最新の回数を取得できませんでした。保存済みの回数で並べています。' : '回数は未取得です。現在は掲載順で表示しています。';
+    }
+    notice.textContent = description + (status ? ' ' + status : '');
+  }
+  function assignRandomProject() {
+    const link = $('random-link');
+    if (!visibleProjects.length) {
+      delete link.dataset.openSlug;
+      return;
+    }
+    const project = visibleProjects[Math.floor(Math.random() * visibleProjects.length)];
+    link.href = project.url;
+    link.dataset.openSlug = project.slug;
+  }
+  function recordOpenFromEvent(event) {
+    if ((event.type === 'click' && event.button !== 0) || (event.type === 'auxclick' && event.button !== 1) || event.defaultPrevented) return;
+    const link = event.target.closest('a[data-open-slug]');
+    if (!link || !popularity?.recordOpen) return;
+    try {
+      Promise.resolve(popularity.recordOpen(link.dataset.openSlug)).catch(() => {});
+    } catch (_) { /* Counting must never interrupt opening a work. */ }
+  }
   function createCard(project, position) {
     const card = make('article', 'project-card');
     card.dataset.kind = kindOf(project);
+    card.dataset.slug = project.slug;
     card.style.animationDelay = Math.min(position * 35, 180) + 'ms';
     card.style.setProperty('--cover-color', project.color);
     if (project.position) card.style.setProperty('--cover-position', project.position);
     const imageLink = externalLink(project.url, 'project-image-link', project.title + 'を開く');
+    imageLink.dataset.openSlug = project.slug;
     if (project.coverStyle) imageLink.classList.add('cover-' + project.coverStyle);
     const image = make('img', 'project-image');
     image.src = project.image;
@@ -74,9 +120,14 @@
     const kicker = make('div', 'card-kicker', project.subtitle);
     const title = make('h3', 'card-title');
     const titleLink = externalLink(project.url, '', project.title);
+    titleLink.dataset.openSlug = project.slug;
     titleLink.textContent = project.title;
     title.append(titleLink);
     const description = make('p', 'card-description', project.description);
+    const count = openCount(project.slug);
+    const popularityLabel = sort.value === 'popular'
+      ? make('p', 'card-popularity', count === null ? '回数は未取得です' : count.toLocaleString('ja-JP') + ' 回開かれました')
+      : null;
     const tagRow = make('div', 'card-tags');
     project.tags.forEach(tag => {
       const button = make('button', 'card-tag', '# ' + tag);
@@ -87,11 +138,14 @@
     });
     const footer = make('div', 'card-footer');
     const play = externalLink(project.url, 'play-link', project.title + 'を開く');
+    play.dataset.openSlug = project.slug;
     play.append(document.createTextNode(kindOf(project) === 'tool' ? '使ってみる' : '遊んでみる'), icon('arrow'));
     const source = externalLink(project.github, 'source-link', project.title + 'のGitHub');
     source.append(icon('github'), document.createTextNode('GitHub'));
     footer.append(play, source);
-    body.append(kicker, title, description, tagRow, footer);
+    body.append(kicker, title, description);
+    if (popularityLabel) body.append(popularityLabel);
+    body.append(tagRow, footer);
     card.append(imageLink, body);
     return card;
   }
@@ -152,6 +206,8 @@
     if (sort.value.startsWith('name-')) {
       const direction = sort.value === 'name-asc' ? 1 : -1;
       visibleProjects.sort((a, b) => a.reading.localeCompare(b.reading, 'ja') * direction);
+    } else if (sort.value === 'popular' && popularityState.counts) {
+      visibleProjects.sort((a, b) => (openCount(b.slug) ?? 0) - (openCount(a.slug) ?? 0) || a.order - b.order);
     } else visibleProjects.sort((a, b) => a.order - b.order);
     grid.replaceChildren(...visibleProjects.map(createCard));
     $('empty-state').hidden = visibleProjects.length > 0;
@@ -160,7 +216,8 @@
     $('filter-info').hidden = !(activeTag || activeKind || terms.length);
     $('filter-summary').textContent = [activeKind ? activeKind === 'tool' ? 'ツール' : 'ゲーム' : '', activeTag ? '# ' + activeTag : '', search.value.trim() ? '「' + search.value.trim() + '」' : ''].filter(Boolean).join(' ＋ ');
     $('random-link').setAttribute('aria-disabled', String(!visibleProjects.length));
-    if (visibleProjects.length) $('random-link').href = visibleProjects[Math.floor(Math.random() * visibleProjects.length)].url;
+    assignRandomProject();
+    updatePopularityNotice();
     renderFilters();
     updateView();
     syncUrl();
@@ -205,9 +262,29 @@
   ['grid', 'list'].forEach(mode => $(mode + '-view').addEventListener('click', () => { view = mode; updateView(); syncUrl(); }));
   $('random-link').addEventListener('click', event => {
     if (!visibleProjects.length) { event.preventDefault(); return; }
-    $('random-link').href = visibleProjects[Math.floor(Math.random() * visibleProjects.length)].url;
+    if (event.button === 0) assignRandomProject();
   });
+  document.addEventListener('click', recordOpenFromEvent);
+  document.addEventListener('auxclick', recordOpenFromEvent);
   $('copyright-year').textContent = String(new Date().getFullYear());
   $('work-total').textContent = String(projects.length).padStart(2, '0') + ' LITTLE DISCOVERIES';
   render();
+  popularity?.subscribe(state => {
+    popularityState = state;
+    if (sort.value !== 'popular') return;
+    clearTimeout(popularityRefresh);
+    // Keep the clicked link intact until its native new-tab navigation has run.
+    popularityRefresh = setTimeout(() => {
+      const focused = document.activeElement;
+      const focusedSlug = focused?.dataset.openSlug;
+      const focusedClass = focused?.className;
+      render();
+      if (focusedSlug && !focused.isConnected) {
+        [...grid.querySelectorAll('a[data-open-slug]')]
+          .find(link => link.dataset.openSlug === focusedSlug && link.className === focusedClass)
+          ?.focus({ preventScroll: true });
+      }
+    }, 0);
+  });
+  try { Promise.resolve(popularity?.start()).catch(() => {}); } catch (_) { /* Works remain available if counting cannot start. */ }
 })();
