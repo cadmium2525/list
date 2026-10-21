@@ -1,3 +1,44 @@
+## 2026-10-21 BOUNCE PARADE ホームアイコン兼ギャラリーカバー
+
+Mode: built-in `image_gen`。新規の正方形ラスター画像1点を生成し、小球3種の周回位置だけを中央に寄せる編集を1回実施。CLI / API fallback は使用していません。ゲームの鮮やかな空・緑の丘・太い紺色輪郭・光沢セルシェードに合わせ、粘土調へは変更していません。
+
+生成マスターPNG: `C:/Users/森本/Documents/sagyou/bounceparade-production/deliverables/icons/bounce-parade-icon-1024.png`
+
+初回生成元: `C:/Users/森本/.codex/generated_images/01a15d95-d80b-75a0-9b4f-e51d32dbb2eb/exec-c5135698-7b1f-4419-bf0e-a234cd5ee75d.png`
+
+最終生成元: `C:/Users/森本/.codex/generated_images/01a15d95-d80b-75a0-9b4f-e51d32dbb2eb/exec-d3dabded-3ea0-417f-9454-64bbc9f50a19.png`
+
+配信用: `dist/assets/bounce-parade-cover.webp`（960 × 960、WebP quality 83、80,164 bytes）。`coverStyle: 'app-icon'` で全体を表示します。
+
+関連サイズ: マスターと同じワークスペースフォルダの `bounce-parade-icon-512.png`、`bounce-parade-icon-192.png`、`bounce-parade-icon-180.png`、`bounce-parade-icon-maskable-512.png`。全PNGは不透明・正方形・角丸マスクなし。主要4球は中央80%直径のmaskable安全円内に収まり、追加padding不要。生成元・512px・192pxの目視確認済み。
+
+参考: ゲームの公開アプリアイコン `https://cadmium2525.github.io/BOUNCEPARADE/icons/icon-512.png` と草原背景。参照画像は画風確認のみで、最初の生成呼び出しには画像を添付していません。編集時のみ初稿をedit targetとして使用しました。
+
+### 完全な初回生成プロンプト
+
+```text
+Use case: stylized-concept
+Asset type: polished home-screen app icon for the colorful 2D physics action game BOUNCE PARADE, 1024 × 1024 square bitmap.
+Primary request: a huge glossy black-and-white soccer ball bouncing upward, with three smaller transforming balls following a loose playful arc: one rainbow-colored glass marble, one purple bowling ball with exactly three round finger holes, and one orange fireball. The soccer ball is the unmistakable focal point. Show a few clear energetic motion lines.
+Scene/backdrop: vivid sky-blue background, soft white clouds, distant rolling green hills, and a tiny green grassy platform near the bottom. Cheerful blue sky fills the entire square.
+Style/medium: crisp high-quality 2D cartoon game illustration, bold dark navy #1b1b2e outlines, polished cel-shaded highlights, saturated yellow, cyan and rainbow accents. Glossy game-ball surfaces, clear simple silhouettes, clean visual hierarchy, cheerful bouncy physical energy.
+Composition/framing: The main soccer ball sits in the center and fills roughly half the width, all of it well inside the central 66% safe region. The smaller balls form a readable loose arc around it, each clearly separated, with every essential ball remaining inside the central 80% circle. Keep comfortable breathing room at the edges and let the sky and landscape bleed to all four edges. The grassy platform is small and secondary. Readable and bold at 64px app-icon size.
+Lighting/mood: sunny, bright, joyful, active; crisp specular highlights with soft cel-shaded form.
+Text: none.
+Constraints: one single finished square icon, fully opaque; no rounded-corner mask drawn into the image; no device frame. No human or animal character, face, mascot, logo, lettering, text, watermark, pseudo-interface, borders, collage panels, extra balls, extra objects or visual clutter. Preserve the outlined 2D physics-game look; do not use clay, felt, plastic-toy render, photorealism, or a 3D scene.
+```
+
+### 完全な最終編集プロンプト
+
+```text
+Use case: precise-object-edit
+Asset type: final home-screen app icon, opaque square 1024 × 1024.
+Edit target: the supplied colorful bouncing-balls icon.
+Primary request: Make exactly one composition correction: tighten the orbit of the three small transforming balls so that they sit closer to the big soccer ball and are about two-thirds of their current sizes. Keep their visual identities. Suggested normalized placements: rainbow marble center (0.30, 0.29) with radius around 0.075; purple three-hole bowling ball center (0.62, 0.26) with radius around 0.085; orange fireball center (0.76, 0.45), all its flames contained within radius around 0.09. Adjust the existing motion strokes only as needed to follow this more compact orbit.
+Invariants: Preserve the large central soccer ball, its size, its exact appearance and its position. Preserve the joyful crisp navy outlined 2D cel-shaded game-art style, sky, clouds, hills, colors and grassy platform. The entire soccer ball and all three smaller balls including flames must fit comfortably within a circle centered at (0.5,0.5) with radius 0.39 of the square width, suitable for an Android maskable icon. Keep sky and landscape full bleed.
+Constraints: no text, no logo, no watermark, no face, no characters, no UI, no border, no rounded corners, no device frame. Fully opaque square image.
+```
+
 # Hero illustration generation
 
 Mode: Built-in image_gen tool (single generation, no reference images).

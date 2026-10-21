@@ -210,5 +210,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/mato',
     image: 'assets/mato-cover.webp', imageAlt: '白い小便器の中の赤白の的が逃げる様子を表した、的、逃走中。のイメージイラスト',
     color: '#e1eaf0', coverStyle: 'illustration'
+  },
+  {
+    order: 18, slug: 'BOUNCEPARADE', kind: 'game',
+    title: 'BOUNCE PARADE', reading: 'ばうんすぱれーど',
+    subtitle: 'BOUNCE, MORPH & BREAK THROUGH',
+    description: '大きさや重さ、はね方を変えて進む2D物理アクション。18種類のボールに変身し、8つのステージと6体のボスに挑もう。',
+    tags: ['アクション', '物理', '変身'],
+    url: 'https://cadmium2525.github.io/BOUNCEPARADE/',
+    github: 'https://github.com/cadmium2525/BOUNCEPARADE',
+    image: 'assets/bounce-parade-cover.webp', imageAlt: '青空と緑の丘を背景に、白黒のサッカーボールと虹色のビー玉、紫の3穴ボウリング球、オレンジ色の火球が跳ねるイメージイラスト',
+    color: '#b5e6ff', coverStyle: 'app-icon'
   }
 ];

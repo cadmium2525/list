@@ -11,7 +11,7 @@ vm.runInNewContext(await fs.readFile(path.join(dist,'projects.js'),'utf8'),catal
 const projects=catalogContext.window.CADMIUM_PROJECTS;
 
 test('all requested works have correct URLs and local cover images',async()=>{
-  const required=['sumaraku','-mic','rakugaction','punching','tomoshibi','aurapuzzle_-adventure','monster_collection','sumamama','endless_monsters','infographic','giftntool','C_tools','souiuimi','kanji-tower','leaf-stream-race','guchitter','mato'];
+  const required=['sumaraku','-mic','rakugaction','punching','tomoshibi','aurapuzzle_-adventure','monster_collection','sumamama','endless_monsters','infographic','giftntool','C_tools','souiuimi','kanji-tower','leaf-stream-race','guchitter','mato','BOUNCEPARADE'];
   assert.equal(new Set(projects.map(p=>p.slug)).size,projects.length);
   assert.equal(new Set(projects.map(p=>p.order)).size,projects.length);
   for(const slug of required){

@@ -1,5 +1,14 @@
 # 画像と紹介文の出典
 
+## 2026-10-21 BOUNCE PARADE 追加
+
+- `bounce-parade-cover.webp`: BOUNCE PARADE のゲーム内容から作成した生成イメージイラスト。白黒サッカーボールを主役に、虹色ガラスビー玉・紫の3穴ボウリング球・オレンジ色の火球が、空と緑の丘の上を跳ねる構図です。
+- 生成モード: built-in `image_gen`。新規生成1回と小球の配置を中央へ寄せる編集1回。CLI / API fallback なし。参照は公開ゲームの既存アイコンと草原背景の画風確認のみ。
+- 保存マスターPNG: `C:/Users/森本/Documents/sagyou/bounceparade-production/deliverables/icons/bounce-parade-icon-1024.png`
+- 配信用保存先: `dist/assets/bounce-parade-cover.webp`（960 × 960、WebP quality 83、80,164 bytes）。
+- 完全な初回生成・最終編集プロンプト、元の生成パス、サイズ別PNGとmaskable確認結果: [IMAGE-PROMPT.md の BOUNCE PARADE 記録](IMAGE-PROMPT.md#2026-10-21-bounce-parade-ホームアイコン兼ギャラリーカバー)。
+- 紹介データは公開ゲームとソースの調査結果に基づきます。ゲームURL `https://cadmium2525.github.io/BOUNCEPARADE/`、GitHub `https://github.com/cadmium2525/BOUNCEPARADE` の大文字表記を維持しています。
+
 紹介文と作品名は、ユーザーが提示した各公開ゲーム・ツールのHTML title・description・READMEを確認して作成しました。
 
 | ファイル | 出典 |

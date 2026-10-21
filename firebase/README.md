@@ -29,3 +29,9 @@
 - 変更前 ruleset: `projects/rakugakisuma/rulesets/46ab979a-d2fa-434e-830c-cdff4e304d54`
 - 変更後 ruleset: `projects/rakugakisuma/rulesets/fbe3c7c4-5d28-4d36-8acb-f922cbea343d`
 - 既存ルール SHA256: `7dd46a02be150c0e2eb2d1e4290a1a0e5ba9741c9e9308204c42a51de0e25e03`
+
+2026-10-21: `BOUNCEPARADE` を18番目の集計対象に追加しました。既存ゲームと17作品の集計制限は保持しています。
+
+- 変更前 ruleset: `projects/rakugakisuma/rulesets/fbe3c7c4-5d28-4d36-8acb-f922cbea343d`
+- 変更後 ruleset: `projects/rakugakisuma/rulesets/aa9887f7-6a1c-4aca-bc59-fa7e4d665c68`
+- 既存ルール SHA256: `c377a134e0064e7936d8af622a9303912f4646f37da0ef12ef3422c89762ae6c`
