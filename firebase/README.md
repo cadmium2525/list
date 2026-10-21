@@ -22,3 +22,10 @@
 変更前の ruleset はゲームルールを復元するための参照です。戻す場合は、その後の変更がないことを確認してから操作してください。ギャラリーの集計データはルール変更で消去されません。
 
 仕様の確認元：[Firebase Auth REST API](https://firebase.google.com/docs/reference/rest/auth)、[Firestore Write](https://firebase.google.com/docs/firestore/reference/rest/v1/Write)、[原子的な書き込みとgetAfter](https://firebase.google.com/docs/firestore/manage-data/transactions)。
+
+
+2026-10-21: 既存のゲームとギャラリーの制限を保持し、`souiuimi`・`kanji-tower`・`leaf-stream-race`・`guchitter`・`mato` の5件を集計対象に追加しました。
+
+- 変更前 ruleset: `projects/rakugakisuma/rulesets/46ab979a-d2fa-434e-830c-cdff4e304d54`
+- 変更後 ruleset: `projects/rakugakisuma/rulesets/fbe3c7c4-5d28-4d36-8acb-f922cbea343d`
+- 既存ルール SHA256: `7dd46a02be150c0e2eb2d1e4290a1a0e5ba9741c9e9308204c42a51de0e25e03`

@@ -28,3 +28,16 @@ atelier-hero.webpはアトリエの創作活動を表現したオリジナルイ
 元ゲームのHELP画面画像はCツール自身の画面ではないため、カバーには使用していません。
 スマママ・ギフトン・Cツールのカバーは、2026-10-11にユーザーの依頼で公式アイコン・初期画面からイメージイラストへ差し替えました。生成モードと最終プロンプトはIMAGE-PROMPT.mdに記録しています。
 PNG/JPEGを配信用WebPに変換し、トップは横1100px、その他は最大横960pxに縮小しました。
+
+
+## 2026-10-21 追加5作品
+
+| ファイル | 出典 |
+|---|---|
+| souiuimi-cover.webp | https://cadmium2525.github.io/souiuimi/icons/icon-original.png （公開済みの公式イラスト） |
+| kanji-tower-cover.webp | 漢字の形そのものを積むゲーム内容から作成した生成イメージイラスト |
+| leaf-stream-cover.webp | 葉を切って用水路に流すゲーム内容から作成した生成イメージイラスト |
+| guchitter-cover.webp | https://cadmium2525.github.io/guchitter/icon-512.png （公開済みの公式アプリアイコン） |
+| mato-cover.webp | 小便器内の的を動かすゲーム内容から作成した生成イメージイラスト。人物・体液・汚れは描写していません |
+
+作品名・紹介文・タグは各公開ページと対応するGitHubリポジトリのREADME・ルーター・画面コードを確認して作成しました。葉っぱ流しは `/Leaf-stream/race` を維持しています（404.htmlにアプリ本体を配信するSPA構成）。愚痴ったーには利用者の日記や投稿画面を使用していません。3点の生成モード・最終プロンプト・保存先はIMAGE-PROMPT.mdに記録しています。

@@ -1,7 +1,7 @@
 'use strict';
 const SCOPE = self.registration.scope;
 const CACHE_PREFIX = 'cadmium-gallery-' + encodeURIComponent(new URL(SCOPE).pathname) + '-';
-const CACHE_NAME = CACHE_PREFIX + 'faaa96c289d176bf';
+const CACHE_NAME = CACHE_PREFIX + 'be0ba730a44a9817';
 const PRECACHE = [
   "./",
   "./app.js",
@@ -11,15 +11,20 @@ const PRECACHE = [
   "./assets/endless-monsters-cover.webp",
   "./assets/favicon.svg",
   "./assets/giftntool-cover.webp",
+  "./assets/guchitter-cover.webp",
   "./assets/icons/apple-touch-icon.png",
   "./assets/icons/icon-192.png",
   "./assets/icons/icon-512.png",
   "./assets/icons/maskable-512.png",
   "./assets/infographic-cover.webp",
+  "./assets/kanji-tower-cover.webp",
+  "./assets/leaf-stream-cover.webp",
+  "./assets/mato-cover.webp",
   "./assets/mic-cover.webp",
   "./assets/monster-collection-cover.webp",
   "./assets/punching-cover.webp",
   "./assets/rakugaction-cover.webp",
+  "./assets/souiuimi-cover.webp",
   "./assets/sumamama-cover.webp",
   "./assets/sumaraku-cover.webp",
   "./assets/tomoshibi-cover.webp",

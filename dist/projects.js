@@ -155,5 +155,60 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/C_tools',
     image: 'assets/c-tools-cover-v2.webp', imageAlt: '星を記録する手帳と電卓、虫眼鏡で育成の記録と計算を表したイメージイラスト',
     color: '#f3e7d5', coverStyle: 'illustration'
+  },
+  {
+    order: 13, slug: 'souiuimi', kind: 'game',
+    title: 'そういう意味じゃない！', reading: 'そういういみじゃない',
+    subtitle: 'READ BETWEEN THE LINES',
+    description: '上司の曖昧なひとことから真意を推理する、3D探索コメディ。オフィスや駅前など全5ケースで、調査と意外な結末を楽しもう。',
+    tags: ['探索', '推理', 'コメディ'],
+    url: 'https://cadmium2525.github.io/souiuimi/',
+    github: 'https://github.com/cadmium2525/souiuimi',
+    image: 'assets/souiuimi-cover.webp', imageAlt: '緑の眼鏡とスーツの上司が、オレンジ色の疑問符と感嘆符の横で首をかしげる公式イラスト',
+    color: '#fff3db', coverStyle: 'portrait'
+  },
+  {
+    order: 14, slug: 'kanji-tower', kind: 'game',
+    title: '漢字タワー', reading: 'かんじたわー',
+    subtitle: 'STACK THE CHARACTERS',
+    description: '好きな漢字を1文字ずつ落とし、字形そのものを高く積み上げる物理パズル。位置と角度を工夫して、崩れない漢字の塔に挑もう。',
+    tags: ['パズル', '物理演算', '漢字'],
+    url: 'https://cadmium2525.github.io/kanji-tower/',
+    github: 'https://github.com/cadmium2525/kanji-tower',
+    image: 'assets/kanji-tower-cover.webp', imageAlt: '立体の漢字を台座の上に積み上げた、漢字タワーのイメージイラスト',
+    color: '#dbeaf3', coverStyle: 'illustration'
+  },
+  {
+    order: 15, slug: 'leaf-stream-race', kind: 'game',
+    title: '葉っぱ流し', reading: 'はっぱながし',
+    subtitle: 'LEAF STREAM',
+    description: '自分で切った葉っぱを田舎の用水路に流し、速さを競う3Dレース。形を工夫して、ほかの人の葉っぱとの非同期対戦を楽しもう。',
+    tags: ['レース', '3D', 'クラフト'],
+    url: 'https://cadmium2525.github.io/Leaf-stream/race',
+    github: 'https://github.com/cadmium2525/Leaf-stream',
+    image: 'assets/leaf-stream-cover.webp', imageAlt: '緑とオレンジの葉が田舎の小さな用水路を流れる、葉っぱ流しのイメージイラスト',
+    color: '#dfeee4', coverStyle: 'illustration'
+  },
+  {
+    order: 16, slug: 'guchitter', kind: 'tool',
+    title: '愚痴ったー', reading: 'ぐちったー',
+    subtitle: 'A LITTLE SPACE FOR YOURSELF',
+    description: '日々の愚痴や気持ちを、端末内にそっと残せる日記アプリ。タグ・検索・画像添付で振り返り、暗号化バックアップも作れます。',
+    tags: ['日記', 'メモ', 'PWA'],
+    url: 'https://cadmium2525.github.io/guchitter/',
+    github: 'https://github.com/cadmium2525/guchitter',
+    image: 'assets/guchitter-cover.webp', imageAlt: 'オレンジ色の背景に白い炎を描いた愚痴ったーの公式アプリアイコン',
+    color: '#f5e4da', coverStyle: 'app-icon'
+  },
+  {
+    order: 17, slug: 'mato', kind: 'game',
+    title: '的、逃走中。', reading: 'まととうそうちゅう',
+    subtitle: 'TARGET ESCAPE',
+    description: '小便器の的になって、次々に迫る着弾を回避。予告を読みながら動き回り、どこまで生き残れるか挑む3Dアクション。',
+    tags: ['アクション', '3D', '回避'],
+    url: 'https://cadmium2525.github.io/mato/',
+    github: 'https://github.com/cadmium2525/mato',
+    image: 'assets/mato-cover.webp', imageAlt: '白い小便器の中の赤白の的が逃げる様子を表した、的、逃走中。のイメージイラスト',
+    color: '#e1eaf0', coverStyle: 'illustration'
   }
 ];

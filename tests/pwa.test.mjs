@@ -11,19 +11,25 @@ vm.runInNewContext(await fs.readFile(path.join(dist,'projects.js'),'utf8'),catal
 const projects=catalogContext.window.CADMIUM_PROJECTS;
 
 test('all requested works have correct URLs and local cover images',async()=>{
-  const required=['sumaraku','-mic','rakugaction','punching','tomoshibi','aurapuzzle_-adventure','monster_collection','sumamama','endless_monsters','infographic','giftntool','C_tools'];
+  const required=['sumaraku','-mic','rakugaction','punching','tomoshibi','aurapuzzle_-adventure','monster_collection','sumamama','endless_monsters','infographic','giftntool','C_tools','souiuimi','kanji-tower','leaf-stream-race','guchitter','mato'];
   assert.equal(new Set(projects.map(p=>p.slug)).size,projects.length);
   assert.equal(new Set(projects.map(p=>p.order)).size,projects.length);
   for(const slug of required){
     const p=projects.find(p=>p.slug===slug);
     assert.ok(p,'Missing work '+slug);
-    assert.equal(p.url,`https://cadmium2525.github.io/${slug}/${slug==='sumamama'?'docs/':''}`);
-    assert.equal(p.github,`https://github.com/cadmium2525/${slug}`);
+    const repository=slug==='leaf-stream-race'?'Leaf-stream':slug;
+    assert.equal(p.url,slug==='leaf-stream-race'?'https://cadmium2525.github.io/Leaf-stream/race':`https://cadmium2525.github.io/${slug}/${slug==='sumamama'?'docs/':''}`);
+    assert.equal(p.github,`https://github.com/cadmium2525/${repository}`);
     assert.ok(p.title&&p.reading&&p.description&&p.tags.length);
     assert.ok(p.image.startsWith('assets/')&&!p.image.includes('..'));
     assert.ok((await fs.stat(path.join(dist,p.image))).size>0);
   }
-  for(const slug of ['infographic','giftntool','C_tools']) assert.equal(projects.find(p=>p.slug===slug).kind,'tool');
+  for(const slug of ['infographic','giftntool','C_tools','guchitter']) assert.equal(projects.find(p=>p.slug===slug).kind,'tool');
+  const rules=await fs.readFile(path.join(root,'firebase/gallery-popularity.rules.inc'),'utf8');
+  for(const slug of required){
+    assert.ok(rules.includes("'"+slug+"'"),'Popularity counter missing '+slug);
+    assert.ok(rules.includes("'"+slug+"_' + uid"),'Popularity receipt missing '+slug);
+  }
 });
 test('PWA resolves inside /list/ and has correctly sized PNG icons',async()=>{
   const m=JSON.parse(await fs.readFile(path.join(dist,'manifest.webmanifest'),'utf8'));

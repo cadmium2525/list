@@ -4,7 +4,8 @@
         return slug in [
           'sumaraku', '-mic', 'rakugaction', 'punching', 'tomoshibi',
           'aurapuzzle_-adventure', 'monster_collection', 'sumamama',
-          'endless_monsters', 'infographic', 'giftntool', 'C_tools'
+          'endless_monsters', 'infographic', 'giftntool', 'C_tools',
+          'souiuimi', 'kanji-tower', 'leaf-stream-race', 'guchitter', 'mato'
         ];
       }
 
@@ -30,7 +31,9 @@
           'punching_' + uid, 'tomoshibi_' + uid, 'aurapuzzle_-adventure_' + uid,
           'monster_collection_' + uid, 'sumamama_' + uid,
           'endless_monsters_' + uid, 'infographic_' + uid,
-          'giftntool_' + uid, 'C_tools_' + uid
+          'giftntool_' + uid, 'C_tools_' + uid,
+          'souiuimi_' + uid, 'kanji-tower_' + uid, 'leaf-stream-race_' + uid,
+          'guchitter_' + uid, 'mato_' + uid
         ];
       }
 

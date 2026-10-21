@@ -105,3 +105,71 @@ Scene/backdrop: seamless warm ivory studio backdrop and cream tabletop, with sub
 Color palette: warm ivory, mint, lavender and golden yellow.
 Avoid: screens with interface graphics, writing on the notebook, numbers on calculator buttons, clutter.
 ```
+
+
+## 2026-10-21 追加作品のイメージイラスト
+
+Mode: built-in image_gen。既存のアトリエのマットな粘土・陶器のミニチュア表現に合わせて新規生成。横長3:2のPNG原本をワークスペースに保存し、960×640・quality82のWebPに軽量化しました。
+
+### kanji-tower
+
+配信用: `dist/assets/kanji-tower-cover.webp`
+
+PNG原本: `artifacts/generated-2026-10-21/kanji-tower-cover.png`
+
+最終プロンプト:
+
+```text
+Use case: stylized-concept
+Asset type: editorial artwork for a Japanese indie-game gallery card, landscape 3:2.
+Primary request: a refined playful miniature still life illustrating a physics puzzle where actual solid kanji letters are stacked.
+Scene/backdrop: matte pastel sky-blue seamless studio background, warm cream circular ceramic plinth.
+Subject: an unstable small tower built from thick extruded navy-blue kanji glyph-shaped sculptures, with exactly these recognizable Japanese characters: 「口」「田」「山」. Beside the top, one separate 「日」 glyph sculpture is just about to fall into the tower. Each glyph is a physical cut-out silhouette with true hollow openings, not a character printed on a cube. Use simple accurate block-style kanji forms so they remain legible, especially 田 with its cross and 山 with its three vertical strokes and bottom join.
+Style/medium: premium handcrafted matte clay/ceramic miniature 3D, softly rounded edges, fine subtle tactile texture, tasteful whimsical still life.
+Composition/framing: centered, fully visible subject and plinth. All important objects fit inside the central 80% of the frame width and central 70% of frame height, with generous empty margin at the top, bottom and sides, suitable for a centered 1.7:1 crop. Small three-quarter viewing angle that preserves the kanji front faces.
+Lighting/mood: soft studio daylight, gentle grounded shadows, calm airy cheerful mood.
+Color palette: deep navy glyphs, pastel sky blue background, cream plinth, one tiny restrained buttery-yellow accent.
+Constraints: only kanji-shaped sculptures and plinth, no screenshots, no interface, no title, no additional text, no logos, no watermark, no humans.
+```
+
+### leaf-stream
+
+配信用: `dist/assets/leaf-stream-cover.webp`
+
+PNG原本: `artifacts/generated-2026-10-21/leaf-stream-cover.png`
+
+最終プロンプト:
+
+```text
+Use case: stylized-concept
+Asset type: editorial artwork for a Japanese indie-game gallery card, landscape 3:2.
+Primary request: a quiet rural miniature illustrating a 3D leaf race, with real natural leaves floating together in a narrow water channel.
+Scene/backdrop: generous pale mint and warm cream seamless studio space, a short carefully crafted concrete irrigation channel in a small countryside diorama.
+Subject: one small green leaf and one small orange leaf floating side by side, each clearly a natural leaf with a stem and subtle veins, on clear translucent pale-blue flowing water. Gentle visible stream lines around the leaves. A few small stones and restrained tufts of grass around the little channel; keep leaves as the focus.
+Style/medium: refined handmade matte clay/ceramic miniature 3D, rounded concrete edges, softly tactile surfaces, water clean and slightly translucent, premium airy craft still life.
+Composition/framing: all important subjects entirely in the central 80% width and central 70% height, centered composition and generous uncluttered background margins suitable for a centered 1.7:1 crop. Slight elevated three-quarter view lets us see leaves and stream clearly. The whole small channel segment stays inside the frame.
+Lighting/mood: soft studio daylight and delicate shadows, serene pastoral atmosphere.
+Color palette: pastel mint, warm cream, pale blue water, natural soft green and orange leaves.
+Constraints: no birds, no boats, no people, no lettering, no logos, no watermark, no screenshots or interface. Do not stylize the leaves into boats or characters.
+```
+
+### mato
+
+配信用: `dist/assets/mato-cover.webp`
+
+PNG原本: `artifacts/generated-2026-10-21/mato-cover.png`
+
+最終プロンプト:
+
+```text
+Use case: stylized-concept
+Asset type: editorial artwork for a Japanese indie-game gallery card, landscape 3:2.
+Primary request: a tasteful cute miniature illustration for a comic action game about a little target moving inside a urinal.
+Scene/backdrop: a tiny wall section of pale-blue and white tiles on a warm cream studio stage, generous soft pale-blue/cream negative space.
+Subject: a clean white miniature wall-mounted urinal, fully visible and centered. A small circular red-and-white bullseye target sits low on the INNER back wall of the bowl. The target tilts slightly as though dodging sideways, suggested by just two restrained curved motion marks. Target is distinct and easy to see inside the bowl.
+Style/medium: premium handmade matte clay/ceramic miniature 3D, smooth rounded white ceramic, fine tactile miniature quality, charming restrained humor, polished editorial artwork.
+Composition/framing: the urinal and complete target fit inside central 80% of image width and central 70% of image height. Fully visible miniature wall and cream base with generous margins for centered 1.7:1 crop. Front three-quarter view that shows inner bowl clearly.
+Lighting/mood: soft bright studio lighting and gentle shadows, pristine welcoming playful atmosphere.
+Color palette: white and pale blue with cream, a single small red-and-white target.
+Constraints: no people, no body parts, no bodily fluids, no stains or dirt, no text, no title, no logos, no watermarks, no screenshots, no pseudo-UI. No visible stream or liquid. Entire image clean and understated.
+```
