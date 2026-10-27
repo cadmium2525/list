@@ -8,6 +8,13 @@
 - 正式名・別称「爆速ゴミ収集」・5地点・スクーター/投げ込み/近道/ジャンプの紹介は、[公開ゲーム](https://cadmium2525.github.io/garbage-truck/)と[README](https://github.com/cadmium2525/garbage-truck/blob/main/README.md)、ゲーム実装を確認して作成しました。
 - ゲームの参照時main: `fee7da0ef6906c2b038c2853d2e10054eb6f860d`。ゲーム本体のリポジトリは変更していません。
 
+## 2026-10-27 千手お手玉 追加
+
+- `senju-otedama-cover.webp`: 千手お手玉の実ゲーム描画から収録した、7個の布玉と複数の腕でお手玉をする観音の画面です。HUDを除いた収録素材を使い、余白を詰めて主役・腕・玉を中央に収めています。画像生成AIは使用していません。
+- 原画: `C:/Users/森本/Documents/sagyou/senju-otedama-production/edit/qa/cover-original.png`（840 × 1520）。上380pxから840 × 1000を切り出し、806 × 960、WebP quality 86に変換しました。
+- 縦長画像は既存の `coverStyle: 'portrait'` で全体を収め、スマホのグリッド・リスト表示で顔・腕・玉の見切れを防ぎます。
+- 作品名・紹介文・タグは[公開ゲーム](https://cadmium2525.github.io/senju-otedama/)と[README](https://github.com/cadmium2525/senju-otedama/blob/main/README.md)、ゲーム実装を確認して作成しました。ゲームの参照時main: `f5db7b62557d0ed2d78f7305f02c2dc2f6abd73a`。ゲーム本体のリポジトリは変更していません。
+
 ## 2026-10-21 BOUNCE PARADE 追加
 
 - `bounce-parade-cover.webp`: BOUNCE PARADE のゲーム内容から作成した生成イメージイラスト。白黒サッカーボールを主役に、虹色ガラスビー玉・紫の3穴ボウリング球・オレンジ色の火球が、空と緑の丘の上を跳ねる構図です。

@@ -232,5 +232,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/garbage-truck',
     image: 'assets/garbage-truck-cover.webp', imageAlt: '街の回収地点に止まる青いゴミ収集車と、赤いスクーターの横で袋を持つ主人公の実ゲーム画面',
     color: '#dfeee4', coverStyle: 'illustration'
+  },
+  {
+    order: 20, slug: 'senju-otedama', kind: 'game',
+    title: '千手お手玉', reading: 'せんじゅおてだま',
+    subtitle: 'TAP. CATCH. KEEP CALM.',
+    description: '手に玉が届く瞬間をタップして、観音とお手玉を続けるタイミングゲーム。玉と腕が増えるほど忙しくなる指先の修行で、何個まで投げ渡せるか挑戦しよう。',
+    tags: ['タイミング', 'ミニゲーム', '和風'],
+    url: 'https://cadmium2525.github.io/senju-otedama/',
+    github: 'https://github.com/cadmium2525/senju-otedama',
+    image: 'assets/senju-otedama-cover.webp', imageAlt: '観音が何本もの腕で、色や柄の違う布玉を投げ渡す千手お手玉の実ゲーム画面',
+    color: '#f6efdf', coverStyle: 'portrait'
   }
 ];

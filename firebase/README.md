@@ -43,3 +43,11 @@
 - 変更前 SHA256: `ceaee099cb8183eb032236303917d62f64c39056ee622efcea45fefabf2547ac`
 - 変更後 SHA256: `168397c294c39d8dc19b502e0bbef4568fd9f5ce57b1cb488f42d7a1ed3cd770`
 - 公式 Rules API のコンパイル結果: エラー・警告なし。公開直前の現行ソース一致と、公開後のルールセット・ソース一致を確認しました。ゲームや集計のデータへの書き込みは行っていません。
+
+2026-10-27: `senju-otedama` を20番目の集計対象に追加しました。変更は `galleryProject`・`galleryOwnReceipt` の許可リストへの追加のみです。既存ゲーム、19作品の集計、日本時間での同日重複防止、本人だけの記録取得、加算以外の書き込み拒否は維持しています。
+
+- 変更前 ruleset: `projects/rakugakisuma/rulesets/6a2d0e1d-c720-4950-9767-82a606a8a1d8`
+- 変更後 ruleset: `projects/rakugakisuma/rulesets/66f86624-0db0-4a6c-8d82-e6ea1a296f59`
+- 変更前 SHA256: `168397c294c39d8dc19b502e0bbef4568fd9f5ce57b1cb488f42d7a1ed3cd770`
+- 変更後 SHA256: `e4df4e8469dc299bfc5ea0c759f265b890e2530a2a323ad9077d0e0b09478183`
+- 公式 Rules API のコンパイル結果: エラー・警告なし。調査時と公開直前のルール一致、許可リスト2箇所だけの変更、公開後のルールセット・ソース一致を確認しました。ゲームや集計のデータへの読み書きは行っていません。
