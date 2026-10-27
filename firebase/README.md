@@ -35,3 +35,11 @@
 - 変更前 ruleset: `projects/rakugakisuma/rulesets/fbe3c7c4-5d28-4d36-8acb-f922cbea343d`
 - 変更後 ruleset: `projects/rakugakisuma/rulesets/aa9887f7-6a1c-4aca-bc59-fa7e4d665c68`
 - 既存ルール SHA256: `c377a134e0064e7936d8af622a9303912f4646f37da0ef12ef3422c89762ae6c`
+
+2026-10-27: `garbage-truck` を19番目の集計対象に追加しました。変更は `galleryProject`・`galleryOwnReceipt` の許可リストへの追加のみです。既存ゲーム、18作品の集計、日本時間での同日重複防止、本人だけの記録取得、加算以外の書き込み拒否は維持しています。
+
+- 変更前 ruleset: `projects/rakugakisuma/rulesets/aa9887f7-6a1c-4aca-bc59-fa7e4d665c68`
+- 変更後 ruleset: `projects/rakugakisuma/rulesets/6a2d0e1d-c720-4950-9767-82a606a8a1d8`
+- 変更前 SHA256: `ceaee099cb8183eb032236303917d62f64c39056ee622efcea45fefabf2547ac`
+- 変更後 SHA256: `168397c294c39d8dc19b502e0bbef4568fd9f5ce57b1cb488f42d7a1ed3cd770`
+- 公式 Rules API のコンパイル結果: エラー・警告なし。公開直前の現行ソース一致と、公開後のルールセット・ソース一致を確認しました。ゲームや集計のデータへの書き込みは行っていません。

@@ -221,5 +221,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/BOUNCEPARADE',
     image: 'assets/bounce-parade-cover.webp', imageAlt: '青空と緑の丘を背景に、白黒のサッカーボールと虹色のビー玉、紫の3穴ボウリング球、オレンジ色の火球が跳ねるイメージイラスト',
     color: '#b5e6ff', coverStyle: 'app-icon'
+  },
+  {
+    order: 19, slug: 'garbage-truck', kind: 'game',
+    title: 'WAIT!! GOMI TRUCK!!', reading: 'うぇいとごみとらっくばくそくごみしゅうしゅう',
+    subtitle: 'CHASE. THROW. CLEAN UP.',
+    description: 'スクーターでゴミ収集車を追い、袋を投げ込む「爆速ゴミ収集」3Dアクション。近道とジャンプを駆使し、全5地点で回収とハイスコアを狙おう。',
+    tags: ['アクション', '3D', 'スコア'],
+    url: 'https://cadmium2525.github.io/garbage-truck/',
+    github: 'https://github.com/cadmium2525/garbage-truck',
+    image: 'assets/garbage-truck-cover.webp', imageAlt: '街の回収地点に止まる青いゴミ収集車と、赤いスクーターの横で袋を持つ主人公の実ゲーム画面',
+    color: '#dfeee4', coverStyle: 'illustration'
   }
 ];

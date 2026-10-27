@@ -1,5 +1,13 @@
 # 画像と紹介文の出典
 
+## 2026-10-27 WAIT!! GOMI TRUCK!! 追加
+
+- `garbage-truck-cover.webp`: 作者のゲーム本体をローカルの撮影環境で動かした、Three.jsによる実ゲーム描画。青い収集車・袋を持つ主人公・赤いスクーターを回収地点で撮影しています。撮影用カメラを道路側へ配置し、HUDを外しました。画像生成AIは使用していません。
+- 原画: `C:/Users/森本/Documents/sagyou/garbage-truck-production/edit/qa/cover-original.png`（1280 × 720）。配信用画像は960 × 540、WebP quality 86、34,454 bytes。
+- スマホのリスト表示では既存の `coverStyle: 'illustration'` により画像全体を収め、トラックや人物の見切れを防ぎます。
+- 正式名・別称「爆速ゴミ収集」・5地点・スクーター/投げ込み/近道/ジャンプの紹介は、[公開ゲーム](https://cadmium2525.github.io/garbage-truck/)と[README](https://github.com/cadmium2525/garbage-truck/blob/main/README.md)、ゲーム実装を確認して作成しました。
+- ゲームの参照時main: `fee7da0ef6906c2b038c2853d2e10054eb6f860d`。ゲーム本体のリポジトリは変更していません。
+
 ## 2026-10-21 BOUNCE PARADE 追加
 
 - `bounce-parade-cover.webp`: BOUNCE PARADE のゲーム内容から作成した生成イメージイラスト。白黒サッカーボールを主役に、虹色ガラスビー玉・紫の3穴ボウリング球・オレンジ色の火球が、空と緑の丘の上を跳ねる構図です。

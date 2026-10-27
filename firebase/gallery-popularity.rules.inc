@@ -6,7 +6,7 @@
           'aurapuzzle_-adventure', 'monster_collection', 'sumamama',
           'endless_monsters', 'infographic', 'giftntool', 'C_tools',
           'souiuimi', 'kanji-tower', 'leaf-stream-race', 'guchitter', 'mato',
-          'BOUNCEPARADE'
+          'BOUNCEPARADE', 'garbage-truck'
         ];
       }
 
@@ -34,7 +34,8 @@
           'endless_monsters_' + uid, 'infographic_' + uid,
           'giftntool_' + uid, 'C_tools_' + uid,
           'souiuimi_' + uid, 'kanji-tower_' + uid, 'leaf-stream-race_' + uid,
-          'guchitter_' + uid, 'mato_' + uid, 'BOUNCEPARADE_' + uid
+          'guchitter_' + uid, 'mato_' + uid, 'BOUNCEPARADE_' + uid,
+          'garbage-truck_' + uid
         ];
       }
 
