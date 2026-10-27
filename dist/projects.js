@@ -243,5 +243,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/senju-otedama',
     image: 'assets/senju-otedama-cover.webp', imageAlt: '観音が何本もの腕で、色や柄の違う布玉を投げ渡す千手お手玉の実ゲーム画面',
     color: '#f6efdf', coverStyle: 'portrait'
+  },
+  {
+    order: 21, slug: 'climbing-the-mast', kind: 'game',
+    title: 'グニャマスト — かぐや、月へ帰る。', reading: 'ぐにゃますとかぐやつきへかえる',
+    subtitle: 'CLIMB BACK TO THE MOON.',
+    description: 'ぐにゃぐにゃのかぐや姫の手足をドラッグし、竹を伝って月を目指す3Dクライミングゲーム。手と足を交互に運んで追い風を起こし、24m先までの帰還タイムに挑もう。',
+    tags: ['アクション', '3D', 'タイムアタック'],
+    url: 'https://cadmium2525.github.io/climbing-the-mast/',
+    github: 'https://github.com/cadmium2525/climbing-the-mast',
+    image: 'assets/climbing-the-mast-cover.webp', imageAlt: '竹につかまるかぐや姫と、帰還を目指す月が見えるグニャマストの実ゲーム画面',
+    color: '#dcece2', coverStyle: 'illustration'
   }
 ];

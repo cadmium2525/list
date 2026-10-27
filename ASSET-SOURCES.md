@@ -8,6 +8,13 @@
 - 正式名・別称「爆速ゴミ収集」・5地点・スクーター/投げ込み/近道/ジャンプの紹介は、[公開ゲーム](https://cadmium2525.github.io/garbage-truck/)と[README](https://github.com/cadmium2525/garbage-truck/blob/main/README.md)、ゲーム実装を確認して作成しました。
 - ゲームの参照時main: `fee7da0ef6906c2b038c2853d2e10054eb6f860d`。ゲーム本体のリポジトリは変更していません。
 
+## 2026-10-28 グニャマスト 追加
+
+- `climbing-the-mast-cover.webp`: グニャマストの実ページから収録した、竹に手足をかけるかぐや姫と右側の月が見える画面です。通常操作で約4.8mへ登った姿勢を使い、HUDと操作用の丸を非表示にして撮影しました。モデル・竹・月・背景は元の実ゲーム描画です。
+- 原画: `C:/Users/森本/Documents/sagyou/climbing-the-mast-production/edit/qa/cover-landscape.png`（1280 × 800）。配信用画像は960 × 600、WebP quality 86。新たな画像生成は行っていません。背景には、ゲームに同梱されている本作専用の既存ImageGen生成画像が含まれます（[背景の記録](https://github.com/cadmium2525/climbing-the-mast/blob/main/public/assets/ASSETS.md)）。
+- スマホのリスト表示では既存の `coverStyle: 'illustration'` により画像全体を収め、かぐや姫や月の見切れを防ぎます。
+- 作品名・紹介文・タグは[公開ゲーム](https://cadmium2525.github.io/climbing-the-mast/)と[README](https://github.com/cadmium2525/climbing-the-mast/blob/main/README.md)、ゲーム実装を確認して作成しました。参照時main: `ea032ceb6acf1e154a619d33cfeb75a1e6497080`。同梱のThree.js MIT通知以外に、画像・PVの表示クレジット指定はありません。ゲーム本体のリポジトリは変更していません。
+
 ## 2026-10-27 千手お手玉 追加
 
 - `senju-otedama-cover.webp`: 千手お手玉の実ゲーム描画から収録した、7個の布玉と複数の腕でお手玉をする観音の画面です。HUDを除いた収録素材を使い、余白を詰めて主役・腕・玉を中央に収めています。画像生成AIは使用していません。
