@@ -59,3 +59,11 @@
 - 変更前 SHA256: `e4df4e8469dc299bfc5ea0c759f265b890e2530a2a323ad9077d0e0b09478183`
 - 変更後 SHA256: `0b81a08f607825d89eb624bb81ffceb1ee15c973ac4c53b04382eda9d35bd92a`
 - 公式 Rules API のコンパイル結果: エラー・警告なし。調査時と公開直前のルール一致、許可リスト2箇所だけの変更、公開後のルールセット・ソース一致を確認しました。ゲームや集計のデータへの読み書きは行っていません。
+
+2026-10-28: `ishikoro`・`command`・`baby-race`・`antlion`・`hokorichan` の5作品を追加し、集計対象を26作品にしました。変更は `galleryProject`・`galleryOwnReceipt` の許可リストへの追加のみです。既存ゲーム、21作品の集計、日本時間での同日重複防止、本人だけの記録取得、加算以外の書き込み拒否は維持しています。
+
+- 変更前 ruleset: `projects/rakugakisuma/rulesets/882bb150-35b5-42ed-bd70-eb034aa38bf5`
+- 変更後 ruleset: `projects/rakugakisuma/rulesets/decbbf8d-3b19-4cb6-846e-80a91d0d9900`
+- 変更前 SHA256: `0b81a08f607825d89eb624bb81ffceb1ee15c973ac4c53b04382eda9d35bd92a`
+- 変更後 SHA256: `402e9a97e9d53400967d04702b06c38c73359f05aa8b5413a2fdf454935e8384`
+- 公式 Rules API のコンパイル結果: エラー・警告なし。調査時と公開直前のルール一致、許可リスト2箇所だけの変更、公開後のルールセット・ソース一致を確認しました。ゲームや集計のデータへの読み書きは行っていません。

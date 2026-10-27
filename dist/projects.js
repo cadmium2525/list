@@ -254,5 +254,60 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/climbing-the-mast',
     image: 'assets/climbing-the-mast-cover.webp', imageAlt: '竹につかまるかぐや姫と、帰還を目指す月が見えるグニャマストの実ゲーム画面',
     color: '#dcece2', coverStyle: 'illustration'
+  },
+  {
+    order: 22, slug: 'ishikoro', kind: 'game',
+    title: 'いしころ', reading: 'いしころ',
+    subtitle: 'ONE STONE. ALL THE WAY HOME.',
+    description: '道ばたの石を蹴り、学校から家まで連れて帰る3D物理アクション。方向・強さ・回転を調整し、車や側溝を避けながら毎回変わる通学路を進み、持ち帰った石を集めよう。',
+    tags: ['アクション', '物理', '収集'],
+    url: 'https://cadmium2525.github.io/ishikoro/',
+    github: 'https://github.com/cadmium2525/ishikoro',
+    image: 'assets/ishikoro-cover.webp', imageAlt: '夕色の空と道を背景に、低ポリゴンの石を描いたいしころの公式アプリアイコン',
+    color: '#eed8b8', coverStyle: 'illustration', position: '50% 78%'
+  },
+  {
+    order: 23, slug: 'command', kind: 'game',
+    title: 'SECRET START', reading: 'しーくれっとすたーと',
+    subtitle: 'THREE INPUTS. SECRET WORLDS.',
+    description: '十字キーとA・Bから3つを入力して、隠れたミニゲームを探すコレクションゲーム。216通りのコマンドを試し、遊んだ後のタイトルでオチがわかる173本を発見しよう。',
+    tags: ['ミニゲーム', 'コマンド', '収集'],
+    url: 'https://cadmium2525.github.io/command/',
+    github: 'https://github.com/cadmium2525/command',
+    image: 'assets/command-cover.webp', imageAlt: '深緑の夜空と湖、灯りのともる城、浮島の金色の扉を描いたSECRET STARTの公式タイトル背景',
+    color: '#0b2f2e', coverStyle: 'illustration'
+  },
+  {
+    order: 24, slug: 'baby-race', kind: 'game',
+    title: 'ガラガラ！ハイハイレース', reading: 'がらがらはいはいれーす',
+    subtitle: "BABY'S FIRST GRAND PRIX",
+    description: 'ガラガラの位置と鳴らすタイミングを工夫し、気まぐれな赤ちゃんをゴールへ誘導する3Dレース。ハプニング満載のコースで、CPU戦や同じ端末で最大4人の対戦を楽しもう。',
+    tags: ['レース', 'パーティー', '3D'],
+    url: 'https://cadmium2525.github.io/baby-race/',
+    github: 'https://github.com/cadmium2525/baby-race',
+    image: 'assets/baby-race-cover.webp', imageAlt: 'パステル色のプレイマットで4人の赤ちゃんをガラガラで誘導する様子を描いた、ハイハイレースのイメージイラスト',
+    color: '#f3ecf6', coverStyle: 'illustration'
+  },
+  {
+    order: 25, slug: 'antlion', kind: 'game',
+    title: 'アリジゴク巨大化ゲーム', reading: 'ありじごくきょだいかげーむ',
+    subtitle: 'EAT SMALL. GROW ENORMOUS.',
+    description: 'アリジゴクになり、獲物に砂をかけて巣穴へ落とす3Dアクション。アリからゾウや恐竜まで食べて巨大化し、全5ラウンドで羽化を目指そう。',
+    tags: ['アクション', '育成', '3D'],
+    url: 'https://cadmium2525.github.io/antlion/',
+    github: 'https://github.com/cadmium2525/antlion',
+    image: 'assets/antlion-cover.webp', imageAlt: 'すり鉢状の砂の巣穴で砂を飛ばす丸いアリジゴクと、縁にいる小さなアリを描いたイメージイラスト',
+    color: '#f8dba0', coverStyle: 'illustration'
+  },
+  {
+    order: 26, slug: 'hokorichan', kind: 'game',
+    title: 'ほこりちゃん', reading: 'ほこりちゃん',
+    subtitle: 'A LITTLE DUST, A LITTLE FRIEND.',
+    description: '部屋を指でなぞってホコリを集め、不思議な生き物「ほこりちゃん」に食べさせる育成ゲーム。お世話や着せ替えを楽しみ、まちから宇宙へおそうじの舞台を広げよう。',
+    tags: ['育成', 'おそうじ', '癒し'],
+    url: 'https://cadmium2525.github.io/hokorichan/',
+    github: 'https://github.com/cadmium2525/hokorichan',
+    image: 'assets/hokorichan-cover.webp', imageAlt: '暖かな部屋で笑う白い綿毛のようなほこりちゃんと掃除機を描いた、公式ピクセルアートのアプリアイコン',
+    color: '#eee4f4', coverStyle: 'app-icon'
   }
 ];

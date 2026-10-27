@@ -8,6 +8,21 @@
 - 正式名・別称「爆速ゴミ収集」・5地点・スクーター/投げ込み/近道/ジャンプの紹介は、[公開ゲーム](https://cadmium2525.github.io/garbage-truck/)と[README](https://github.com/cadmium2525/garbage-truck/blob/main/README.md)、ゲーム実装を確認して作成しました。
 - ゲームの参照時main: `fee7da0ef6906c2b038c2853d2e10054eb6f860d`。ゲーム本体のリポジトリは変更していません。
 
+## 2026-10-28 追加5ゲーム
+
+| 配信用ファイル | 画像の種類・出典 | サイズ・変換 |
+|---|---|---|
+| `ishikoro-cover.webp` | [いしころ公式アプリアイコン](https://github.com/cadmium2525/ishikoro/blob/e7e3f57c90a4758858df0053226daf1e9341ba15/public/icon-512.png)。夕色の空と道に置かれた低ポリゴンの石。 | 512 × 512、WebP quality 86、2,220 bytes |
+| `command-cover.webp` | [SECRET START公式タイトル背景](https://github.com/cadmium2525/command/blob/f184b3ac4de297d4f5ca9560a0774d629c4a5a30/public/assets/title-world.webp)。深緑の夜空・城・浮島の扉。元作品用に生成された既存画像で、[素材台帳](https://github.com/cadmium2525/command/blob/f184b3ac4de297d4f5ca9560a0774d629c4a5a30/docs/assets-manifest.md)の区分はOpenAI-outputです。CC0素材とは扱いません。 | 960 × 600、元のWebPを変換せずコピー、56,226 bytes |
+| `baby-race-cover.webp` | ガラガラ！ハイハイレースの作品内容に基づく新規生成イメージ（実画面ではありません）。4色のプレイマット、4人の赤ちゃんとガラガラ。 | 960 × 640、WebP quality 84、37,766 bytes |
+| `antlion-cover.webp` | アリジゴク巨大化ゲームの作品内容に基づく新規生成イメージ（実画面ではありません）。すり鉢状の巣穴にいる幼虫、砂粒、小さなアリ。 | 960 × 640、WebP quality 84、97,944 bytes |
+| `hokorichan-cover.webp` | [ほこりちゃん公式アプリアイコン](https://github.com/cadmium2525/hokorichan/blob/75c7758f33d2f9cfbbceca9a2c7a011db37e5c27/public/icons/icon-512.png)。暖かい部屋の白い綿毛状キャラクターと掃除機を描いたピクセルアート。 | 512 × 512、WebP quality 86、37,206 bytes |
+
+- 既存画像3点は公式リポジトリの画像を使用し、新たな画像生成は行っていません。いしころ・ほこりちゃんに外部作者名や別の表示クレジット指定は見当たらず、出典を上記に記録しています。ライセンス区分を推定していません。
+- 新規生成2点はbuilt-in `image_gen`で各1回生成し、CLI/API fallbackは使用していません。原画・完全プロンプト・保存先・生成結果は `C:/Users/森本/Documents/sagyou/gallery-additions-2026-10-28/generated/` と [IMAGE-PROMPT.md](IMAGE-PROMPT.md) に記録しました。
+- カードではいしころの石が中央に収まるよう `position: '50% 78%'` を指定。ほこりちゃんは公式アイコンの全体を収め、その他の横長イラストもリスト表示では全体を収めます。
+- 紹介文・正式名・タグは、各公開ページとREADME・操作実装を照合して作成しました。参照mainは、いしころ `e7e3f57c90a4758858df0053226daf1e9341ba15`、SECRET START `f184b3ac4de297d4f5ca9560a0774d629c4a5a30`、ガラガラ！ハイハイレース `eecddb5a31d23ed9e07b4a0b0632c8bd33a68f31`、アリジゴク巨大化ゲーム `8f406935df09437b28c89da9dca83fc18d63b8ce`、ほこりちゃん `75c7758f33d2f9cfbbceca9a2c7a011db37e5c27`。ゲーム本体のリポジトリは変更していません。
+
 ## 2026-10-28 グニャマスト 追加
 
 - `climbing-the-mast-cover.webp`: グニャマストの実ページから収録した、竹に手足をかけるかぐや姫と右側の月が見える画面です。通常操作で約4.8mへ登った姿勢を使い、HUDと操作用の丸を非表示にして撮影しました。モデル・竹・月・背景は元の実ゲーム描画です。

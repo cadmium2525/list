@@ -214,3 +214,52 @@ Lighting/mood: soft bright studio lighting and gentle shadows, pristine welcomin
 Color palette: white and pale blue with cream, a single small red-and-white target.
 Constraints: no people, no body parts, no bodily fluids, no stains or dirt, no text, no title, no logos, no watermarks, no screenshots, no pseudo-UI. No visible stream or liquid. Entire image clean and understated.
 ```
+
+
+## 2026-10-28 ハイハイレース・アリジゴクのカバー
+
+モード: built-in `image_gen`。新規生成2回、各作品1回。CLI/API fallbackなし。両画像は作品内容に基づく生成イメージであり、実ゲーム画面ではありません。原画・配信用WebPをview_imageで確認済みです。
+
+### baby-race
+
+- 原画: `C:/Users/森本/Documents/sagyou/gallery-additions-2026-10-28/generated/baby-race-original.png`
+- 配信先: `C:/Users/森本/Documents/sagyou/list/dist/assets/baby-race-cover.webp`
+- サイズ: 960 × 640、WebP quality 84
+- 元の生成ファイル: `C:\Users\森本\.codex\generated_images\01a15c4f-e4e1-7661-8bfe-f031a653b081\exec-718976c6-12fd-472e-b555-99f5eae48208.png`
+- 生成設定: transparent_background=false、画像参照なし
+
+最終プロンプト（生成時の全文）:
+
+```text
+Use case: stylized-concept
+Asset type: landscape 3:2 cover illustration for an indie game gallery.
+Primary request: a cute toy diorama illustrating a baby crawling race guided by the sound of a rattle.
+Scene/backdrop: pale warm cream seamless background and a little rectangular foam play-mat racetrack, four parallel lanes in soft green, lilac, pink, yellow.
+Subject: exactly four adorable fully clothed toy babies, one in each lane, with round heads, tiny bodies and simple playful faces, all on hands and knees crawling forward with whimsical different attention and expressions. Their outfits are green, lilac, pink and yellow; diapers are covered by the outfits. One chunky round baby rattle on the mat in front of them is clearly visible together with the babies, hinting that its sound is guiding the race. No adult hand.
+Style/medium: gentle low-poly 3D toy game illustration, softly rounded forms, matte pastel foam and clay-like toy materials, restrained polished diorama.
+Composition/framing: wide horizontal 3:2. Slight elevated three-quarter view looking along the four lanes, all four baby faces visible and distinct. Keep the entire important scene, including babies and rattle, grouped inside the central 60% of the width and central 65% of the height with generous cream margins. Strong simple silhouettes readable on small mobile cards. Complete figures, no clipping.
+Lighting/mood: diffuse warm studio light, soft shadows, cheerful gentle sense of competition and play.
+Constraints: a concept illustration based on game content, no screenshots or interface. No text, no numbers, no logos, no watermarks. No realistic human photo, no nudity, no extra babies, no adult characters.
+```
+
+### antlion
+
+- 原画: `C:/Users/森本/Documents/sagyou/gallery-additions-2026-10-28/generated/antlion-original.png`
+- 配信先: `C:/Users/森本/Documents/sagyou/list/dist/assets/antlion-cover.webp`
+- サイズ: 960 × 640、WebP quality 84
+- 元の生成ファイル: `C:\Users\森本\.codex\generated_images\01a15c4f-e4e1-7661-8bfe-f031a653b081\exec-cf28dbde-1915-45da-b83a-b462cb5fa226.png`
+- 生成設定: transparent_background=false、画像参照なし
+
+最終プロンプト（生成時の全文）:
+
+```text
+Use case: stylized-concept
+Asset type: landscape 3:2 cover illustration for an indie game gallery.
+Primary request: a charming toy 3D miniature sand ecosystem illustrating an antlion growing larger by throwing sand to lure tiny ants into its funnel pit.
+Scene/backdrop: a warm golden sandy miniature patch against a simple pale cream and sandy background.
+Subject: one large conical funnel-shaped sand pit with a cute brown-to-sand-colored antlion larva visible at the center. The larva has a stout rounded segmented body, a broad little head, two tiny black eyes, and exactly one small pair of curved jaws. The larva looks like a friendly toy insect. At the rim are two or three very small black ants with clear simple three-part silhouettes. A modest arc of several airborne sand grains curves from the larva toward one rim, hinting at the sand-throwing game action.
+Style/medium: charming soft low-poly game 3D, toy diorama illustration, matte rounded forms, subtle sand grain texture, natural warm light. Keep the insect stylized and approachable rather than realistic.
+Composition/framing: wide horizontal 3:2, elevated three-quarter view showing the funnel shape clearly. Funnel pit and central larva large and centered; all important objects, ants and sand arc fit in the central 60% width and central 65% height, with generous quiet margins. Main larva and circular pit silhouette legible in a small mobile card.
+Lighting/mood: calm warm sunlight, soft natural shadows, playful miniature ecological scene.
+Constraints: artwork based on game content, no screenshots or UI. No text, no numbers, no logos, no watermarks. No scary photoreal insect, no gore, no anthropomorphic clothing, no extra large insects, no giant fangs.
+```

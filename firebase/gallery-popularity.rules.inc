@@ -7,7 +7,8 @@
           'endless_monsters', 'infographic', 'giftntool', 'C_tools',
           'souiuimi', 'kanji-tower', 'leaf-stream-race', 'guchitter', 'mato',
           'BOUNCEPARADE', 'garbage-truck', 'senju-otedama',
-          'climbing-the-mast'
+          'climbing-the-mast', 'ishikoro', 'command', 'baby-race',
+          'antlion', 'hokorichan'
         ];
       }
 
@@ -37,7 +38,9 @@
           'souiuimi_' + uid, 'kanji-tower_' + uid, 'leaf-stream-race_' + uid,
           'guchitter_' + uid, 'mato_' + uid, 'BOUNCEPARADE_' + uid,
           'garbage-truck_' + uid, 'senju-otedama_' + uid,
-          'climbing-the-mast_' + uid
+          'climbing-the-mast_' + uid,
+          'ishikoro_' + uid, 'command_' + uid, 'baby-race_' + uid,
+          'antlion_' + uid, 'hokorichan_' + uid
         ];
       }
 
