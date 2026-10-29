@@ -309,5 +309,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/hokorichan',
     image: 'assets/hokorichan-cover.webp', imageAlt: '暖かな部屋で笑う白い綿毛のようなほこりちゃんと掃除機を描いた、公式ピクセルアートのアプリアイコン',
     color: '#eee4f4', coverStyle: 'app-icon'
+  },
+  {
+    order: 27, slug: 'pancake', kind: 'game',
+    title: 'PANCAKE AXEL', reading: 'ぱんけーきあくせる',
+    subtitle: 'BAKE. TOSS. GO FOR GOLD.',
+    description: 'パンケーキを空中で回転させ、フライパンで受け止める60秒の3Dクッキングアクション。スマホの動きやタッチ操作で技を決め、両面の焼き加減も整えて高得点を狙おう。',
+    tags: ['アクション', '3D', '料理'],
+    url: 'https://cadmium2525.github.io/pancake/',
+    github: 'https://github.com/cadmium2525/pancake',
+    image: 'assets/pancake-cover.webp', imageAlt: 'フライパンの上でパンケーキが空中回転するPANCAKE AXELの実ゲーム画面',
+    color: '#f7edce', coverStyle: 'illustration'
   }
 ];

@@ -8,7 +8,7 @@
           'souiuimi', 'kanji-tower', 'leaf-stream-race', 'guchitter', 'mato',
           'BOUNCEPARADE', 'garbage-truck', 'senju-otedama',
           'climbing-the-mast', 'ishikoro', 'command', 'baby-race',
-          'antlion', 'hokorichan'
+          'antlion', 'hokorichan', 'pancake'
         ];
       }
 
@@ -40,7 +40,7 @@
           'garbage-truck_' + uid, 'senju-otedama_' + uid,
           'climbing-the-mast_' + uid,
           'ishikoro_' + uid, 'command_' + uid, 'baby-race_' + uid,
-          'antlion_' + uid, 'hokorichan_' + uid
+          'antlion_' + uid, 'hokorichan_' + uid, 'pancake_' + uid
         ];
       }
 

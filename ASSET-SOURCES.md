@@ -8,6 +8,13 @@
 - 正式名・別称「爆速ゴミ収集」・5地点・スクーター/投げ込み/近道/ジャンプの紹介は、[公開ゲーム](https://cadmium2525.github.io/garbage-truck/)と[README](https://github.com/cadmium2525/garbage-truck/blob/main/README.md)、ゲーム実装を確認して作成しました。
 - ゲームの参照時main: `fee7da0ef6906c2b038c2853d2e10054eb6f860d`。ゲーム本体のリポジトリは変更していません。
 
+## 2026-10-29 PANCAKE AXEL 追加
+
+- `pancake-cover.webp`: PANCAKE AXELの実ゲーム描画から収録した、黄金色のパンケーキがフライパンの上を舞うキッチンの画面です。通常の代替タッチ操作で焼き、トスした状態を使っています。カバー撮影時はHUDを非表示にし、パンケーキとフライパンの取っ手まで全体が収まるようカメラを少し引きました。ゲームの物理・焼成・得点は変更していません。
+- 原画: `C:/Users/森本/Documents/sagyou/pancake-production/edit/qa/cover-landscape.png`（1280 × 800）。配信用画像は960 × 600、WebP quality 86、13,552 bytes。
+- モデル・焼き色テクスチャは元ゲームのプログラムで生成されたものです。新たな画像生成AIは使用していません。スマホのリスト表示では既存の `coverStyle: 'illustration'` で全体を収めます。
+- 作品名・紹介文・タグは[公開ゲーム](https://cadmium2525.github.io/pancake/)と[README](https://github.com/cadmium2525/pancake/blob/main/README.md)、ゲーム実装を確認して作成しました。参照時main: `344c51da87d5e3008b3cc9c22453e9317665dfa0`。外部アセットや個別の表示クレジット指定は見当たりません。ゲーム本体のリポジトリは変更していません。
+
 ## 2026-10-28 追加5ゲーム
 
 | 配信用ファイル | 画像の種類・出典 | サイズ・変換 |
