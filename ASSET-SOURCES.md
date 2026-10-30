@@ -8,6 +8,13 @@
 - 正式名・別称「爆速ゴミ収集」・5地点・スクーター/投げ込み/近道/ジャンプの紹介は、[公開ゲーム](https://cadmium2525.github.io/garbage-truck/)と[README](https://github.com/cadmium2525/garbage-truck/blob/main/README.md)、ゲーム実装を確認して作成しました。
 - ゲームの参照時main: `fee7da0ef6906c2b038c2853d2e10054eb6f860d`。ゲーム本体のリポジトリは変更していません。
 
+## 2026-10-30 10,000 HORSE RACE 追加
+
+- `horse10-000-cover.webp`: [公式OGPイラスト](https://github.com/cadmium2525/horse10-000/blob/84496203350bc141637a0b3de0847e7ac450bbee/public/assets/ogp.png)。ピンクの騎手と馬、色とりどりの馬群、作品名を描いた画像です。`src/share/CardRenderer.ts` の `renderOgp()` がCanvas 2Dで生成しており、実プレイのスクリーンショットやAI生成画像ではありません。
+- 原画: `C:/Users/森本/Documents/sagyou/horse10-000-research/official-ogp.png`（1200 × 630、SHA256 `cc7b31de5d0884b418e7311f90ccc0c5944ff355a8b0dd6f26c60e9c0988b34c`）。配信用画像は960 × 504、WebP quality 86。新たな画像生成は行っていません。
+- スマホのリスト表示では既存の `coverStyle: 'illustration'` で画像全体を収めます。
+- 正式名・紹介文・横持ち推奨・タグは[公開ゲーム](https://cadmium2525.github.io/horse10-000/)と[README](https://github.com/cadmium2525/horse10-000/blob/84496203350bc141637a0b3de0847e7ac450bbee/README.md)、操作・レース実装を確認して作成しました。参照main: `84496203350bc141637a0b3de0847e7ac450bbee`。出典: © 2026 cadmium2525、[MIT License](https://github.com/cadmium2525/horse10-000/blob/84496203350bc141637a0b3de0847e7ac450bbee/LICENSE)。ゲーム本体のリポジトリは変更していません。
+
 ## 2026-10-30 ニラ飛ばし 追加
 
 - `nira-cover.webp`: ニラ飛ばしの実ゲーム描画から収録した、木のトレイに個性の違う8本のニラが並ぶ選択画面です。通常操作で2本を選んだ状態を使い、HUDを非表示にして撮影しました。ニラ・トレイ・選択の印は元のゲーム描画です。

@@ -8,7 +8,7 @@
           'souiuimi', 'kanji-tower', 'leaf-stream-race', 'guchitter', 'mato',
           'BOUNCEPARADE', 'garbage-truck', 'senju-otedama',
           'climbing-the-mast', 'ishikoro', 'command', 'baby-race',
-          'antlion', 'hokorichan', 'pancake', 'nira'
+          'antlion', 'hokorichan', 'pancake', 'nira', 'horse10-000'
         ];
       }
 
@@ -41,7 +41,7 @@
           'climbing-the-mast_' + uid,
           'ishikoro_' + uid, 'command_' + uid, 'baby-race_' + uid,
           'antlion_' + uid, 'hokorichan_' + uid, 'pancake_' + uid,
-          'nira_' + uid
+          'nira_' + uid, 'horse10-000_' + uid
         ];
       }
 

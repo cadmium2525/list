@@ -331,5 +331,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/nira',
     image: 'assets/nira-cover.webp', imageAlt: '木のトレイに並んだ8本のニラと選んだ2本の印が見える、ニラ飛ばしの実ゲーム画面',
     color: '#f6f4eb', coverStyle: 'illustration'
+  },
+  {
+    order: 29, slug: 'horse10-000', kind: 'game',
+    title: '10,000 HORSE RACE', reading: 'いちまんほーすれーす10000頭競馬',
+    subtitle: '9,999頭を抜け。馬の山を跳び越えろ。',
+    description: '1万頭が同時に走る、コミカルな3Dサバイバルレース。最後尾からスタートし、ジャンプとダッシュで転倒をかわして9,999頭抜きに挑もう。スマホは横持ちでプレイ。',
+    tags: ['レース', 'アクション', '3D'],
+    url: 'https://cadmium2525.github.io/horse10-000/',
+    github: 'https://github.com/cadmium2525/horse10-000',
+    image: 'assets/horse10-000-cover.webp', imageAlt: 'ピンクの騎手が乗る馬と色とりどりの馬群、10,000 HORSE RACEのタイトルを描いた公式画像',
+    color: '#dceec9', coverStyle: 'illustration'
   }
 ];
