@@ -320,5 +320,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/pancake',
     image: 'assets/pancake-cover.webp', imageAlt: 'フライパンの上でパンケーキが空中回転するPANCAKE AXELの実ゲーム画面',
     color: '#f7edce', coverStyle: 'illustration'
+  },
+  {
+    order: 28, slug: 'nira', kind: 'game',
+    title: 'ニラ飛ばし', reading: 'にらとばしにらすろー',
+    subtitle: 'A LITTLE GREEN. A BIG DREAM.',
+    description: '8本のニラから相棒を2本選び、風を読みながら遠くへ投げる3Dスポーツゲーム。長押しとスワイプでパワー・高さ・方向を調整し、場外を避けて2投の最高飛距離に挑もう。',
+    tags: ['スポーツ', '3D', 'スコア'],
+    url: 'https://cadmium2525.github.io/nira/',
+    github: 'https://github.com/cadmium2525/nira',
+    image: 'assets/nira-cover.webp', imageAlt: '木のトレイに並んだ8本のニラと選んだ2本の印が見える、ニラ飛ばしの実ゲーム画面',
+    color: '#f6f4eb', coverStyle: 'illustration'
   }
 ];

@@ -8,6 +8,13 @@
 - 正式名・別称「爆速ゴミ収集」・5地点・スクーター/投げ込み/近道/ジャンプの紹介は、[公開ゲーム](https://cadmium2525.github.io/garbage-truck/)と[README](https://github.com/cadmium2525/garbage-truck/blob/main/README.md)、ゲーム実装を確認して作成しました。
 - ゲームの参照時main: `fee7da0ef6906c2b038c2853d2e10054eb6f860d`。ゲーム本体のリポジトリは変更していません。
 
+## 2026-10-30 ニラ飛ばし 追加
+
+- `nira-cover.webp`: ニラ飛ばしの実ゲーム描画から収録した、木のトレイに個性の違う8本のニラが並ぶ選択画面です。通常操作で2本を選んだ状態を使い、HUDを非表示にして撮影しました。ニラ・トレイ・選択の印は元のゲーム描画です。
+- 原画: `C:/Users/森本/Documents/sagyou/nira-production/edit/qa/cover-landscape.png`（1280 × 800）。配信用画像は960 × 600、WebP quality 86。カバー用にカメラをトレイへ寄せ、8本を大きく見せています。ゲーム本体の物理・飛距離・結果は変更していません。新たな画像生成AIは使用していません。
+- スマホのリスト表示では既存の `coverStyle: 'illustration'` で画像全体を収めます。
+- 作品名・紹介文・タグは[公開ゲーム](https://cadmium2525.github.io/nira/)と[README](https://github.com/cadmium2525/nira/blob/main/README.md)、ゲーム実装を確認して作成しました。参照時main: `c84e7aec7c8c515789bee35491eb93c95412d4a7`。ゲーム本体のリポジトリは変更していません。今回の選択画面には外部画像や個別の表示クレジット指定は見当たりません。
+
 ## 2026-10-29 PANCAKE AXEL 追加
 
 - `pancake-cover.webp`: PANCAKE AXELの実ゲーム描画から収録した、黄金色のパンケーキがフライパンの上を舞うキッチンの画面です。通常の代替タッチ操作で焼き、トスした状態を使っています。カバー撮影時はHUDを非表示にし、パンケーキとフライパンの取っ手まで全体が収まるようカメラを少し引きました。ゲームの物理・焼成・得点は変更していません。
