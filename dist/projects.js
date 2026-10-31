@@ -342,5 +342,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/horse10-000',
     image: 'assets/horse10-000-cover.webp', imageAlt: 'ピンクの騎手が乗る馬と色とりどりの馬群、10,000 HORSE RACEのタイトルを描いた公式画像',
     color: '#dceec9', coverStyle: 'illustration'
+  },
+  {
+    order: 30, slug: 'akashiro', kind: 'game',
+    title: 'ウルトラ赤白帽', reading: 'うるとらあかしろぼう',
+    subtitle: 'ひっぱって、まわして、かっこよく。',
+    description: '赤白帽を引っぱり、回し、ツバを整えて友だちにかぶせる3Dスワイプゲーム。左右のバランスと力加減を工夫し、くしゃくしゃにしないよう4つのステップで高得点を狙おう。',
+    tags: ['アクション', '3D', 'スコア'],
+    url: 'https://cadmium2525.github.io/akashiro/',
+    github: 'https://github.com/cadmium2525/akashiro',
+    image: 'assets/akashiro-cover.webp', imageAlt: '教室で赤白帽をかぶった友だちがポーズをとる、ウルトラ赤白帽の実ゲーム画面',
+    color: '#f3e5cb', coverStyle: 'illustration'
   }
 ];

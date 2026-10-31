@@ -8,6 +8,14 @@
 - 正式名・別称「爆速ゴミ収集」・5地点・スクーター/投げ込み/近道/ジャンプの紹介は、[公開ゲーム](https://cadmium2525.github.io/garbage-truck/)と[README](https://github.com/cadmium2525/garbage-truck/blob/main/README.md)、ゲーム実装を確認して作成しました。
 - ゲームの参照時main: `fee7da0ef6906c2b038c2853d2e10054eb6f860d`。ゲーム本体のリポジトリは変更していません。
 
+## 2026-10-31 ウルトラ赤白帽 追加
+
+- `akashiro-cover.webp`: ウルトラ赤白帽の実ゲーム描画から収録した、教室の友だちと赤白帽の画面です。帽子・小学生・教室は元のThree.js手続きメッシュで、画像生成AIは使用していません。
+- 原画: `C:/Users/森本/Documents/sagyou/akashiro-production/edit/qa/cover-landscape.png`（1280 × 800）。配信用画像は960 × 600、WebP quality 86。通常のかんたんモードのスワイプ操作で100点S評価となった光線ポーズを使い、HUDを非表示にして帽子の先と全身が入るよう撮影用カメラを少し引きました。ゲーム本体の形状パラメーター・採点・結果を直接変更していません。
+- スマホのリスト表示では既存の `coverStyle: 'illustration'` で画像全体を収めます。
+- 作品名・紹介文・4段階の操作・タグは[公開ゲーム](https://cadmium2525.github.io/akashiro/)と[README](https://github.com/cadmium2525/akashiro/blob/ee111fc0f633e597440d376ba135116d022a342e/README.md)、入力・採点実装を確認して作成しました。参照main: `ee111fc0f633e597440d376ba135116d022a342e`。ゲーム本体のリポジトリは変更していません。
+- ゲーム全体のLICENSEファイルや個別の画像・PV表示クレジット指定は見当たりません。同梱Three.jsのMIT通知をゲーム全体のライセンスと解釈していません。
+
 ## 2026-10-30 10,000 HORSE RACE 追加
 
 - `horse10-000-cover.webp`: [公式OGPイラスト](https://github.com/cadmium2525/horse10-000/blob/84496203350bc141637a0b3de0847e7ac450bbee/public/assets/ogp.png)。ピンクの騎手と馬、色とりどりの馬群、作品名を描いた画像です。`src/share/CardRenderer.ts` の `renderOgp()` がCanvas 2Dで生成しており、実プレイのスクリーンショットやAI生成画像ではありません。
