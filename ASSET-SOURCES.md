@@ -8,6 +8,13 @@
 - 正式名・別称「爆速ゴミ収集」・5地点・スクーター/投げ込み/近道/ジャンプの紹介は、[公開ゲーム](https://cadmium2525.github.io/garbage-truck/)と[README](https://github.com/cadmium2525/garbage-truck/blob/main/README.md)、ゲーム実装を確認して作成しました。
 - ゲームの参照時main: `fee7da0ef6906c2b038c2853d2e10054eb6f860d`。ゲーム本体のリポジトリは変更していません。
 
+## 2026-11-01 SEESAW 追加
+
+- `seesaw-jump-cover.webp`: [公式OGPイラスト](https://github.com/cadmium2525/seesaw_jump/blob/f2463176af7b1f52814333deaa62be69cbdc1c9a/public/social.svg)。一つ目のカニ脚シーソー、空中の人、太陽と丘、作品名を描いた既存のSVG画像です。実プレイのスクリーンショットやAI生成画像ではありません。
+- 原本: `C:/Users/森本/Documents/sagyou/seesaw-jump-research/official-social.svg`（SHA256 `2ba75a046721a75c06608fbaae4779700dd48f242adf883038495e5666aada0b`）。1200 × 630のPNGへ描画した後、960 × 504、WebP quality 86へ変換しました。新たな画像生成は行っていません。
+- スマホのリスト表示では既存の `coverStyle: 'illustration'` で画像全体を収めます。
+- 正式名・紹介文・タグは[公開ゲーム](https://cadmium2525.github.io/seesaw_jump/)と[README](https://github.com/cadmium2525/seesaw_jump/blob/f2463176af7b1f52814333deaa62be69cbdc1c9a/README.md)、入力・キャッチ判定の実装を確認して作成しました。参照main: `f2463176af7b1f52814333deaa62be69cbdc1c9a`。出典: © 2026 SEESAW contributors、[MIT License](https://github.com/cadmium2525/seesaw_jump/blob/f2463176af7b1f52814333deaa62be69cbdc1c9a/LICENSE)。ゲーム本体のリポジトリは変更していません。
+
 ## 2026-10-31 ウルトラ赤白帽 追加
 
 - `akashiro-cover.webp`: ウルトラ赤白帽の実ゲーム描画から収録した、教室の友だちと赤白帽の画面です。帽子・小学生・教室は元のThree.js手続きメッシュで、画像生成AIは使用していません。

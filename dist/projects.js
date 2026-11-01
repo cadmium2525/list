@@ -353,5 +353,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/akashiro',
     image: 'assets/akashiro-cover.webp', imageAlt: '教室で赤白帽をかぶった友だちがポーズをとる、ウルトラ赤白帽の実ゲーム画面',
     color: '#f3e5cb', coverStyle: 'illustration'
+  },
+  {
+    order: 31, slug: 'seesaw_jump', kind: 'game',
+    title: 'SEESAW — 空まで、もう一回。', reading: 'しーそーそらまでもういっかいしーそーじゃんぷ',
+    subtitle: 'A LITTLE BALANCE. A LOT OF SKY.',
+    description: '一つ目のカニ脚シーソーを左右に動かし、落ちてくる2人を交互に打ち上げる3Dアクション。板の端でキャッチするほど高く飛べる仕組みを生かし、着地直前は感覚を頼りに最高高度へ挑もう。',
+    tags: ['アクション', '3D', 'スコア'],
+    url: 'https://cadmium2525.github.io/seesaw_jump/',
+    github: 'https://github.com/cadmium2525/seesaw_jump',
+    image: 'assets/seesaw-jump-cover.webp', imageAlt: '一つ目のカニ脚シーソーと空中の人、SEESAWのタイトルを描いた公式イラスト',
+    color: '#e8eddc', coverStyle: 'illustration'
   }
 ];
