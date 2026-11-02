@@ -364,5 +364,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/seesaw_jump',
     image: 'assets/seesaw-jump-cover.webp', imageAlt: '一つ目のカニ脚シーソーと空中の人、SEESAWのタイトルを描いた公式イラスト',
     color: '#e8eddc', coverStyle: 'illustration'
+  },
+  {
+    order: 32, slug: 'plant', kind: 'game',
+    title: 'BOTANICAL ODDITIES｜奇妙な植物の小さな温室', reading: 'ぼたにかるおでぃてぃーずきみょうなしょくぶつのちいさなおんしつ',
+    subtitle: 'ONE SEED. ONE OF A KIND.',
+    description: '種ガチャで手に入れた塊根植物や多肉植物を、3Dの個性的な一株へ育てる温室ゲーム。樹形や変異を図鑑に集め、鉢の飾り付けやカード作りで自分だけの植物コレクションを楽しもう。',
+    tags: ['育成', '3D', 'コレクション'],
+    url: 'https://cadmium2525.github.io/plant/',
+    github: 'https://github.com/cadmium2525/plant',
+    image: 'assets/plant-cover.webp', imageAlt: '足を組んだような根のガジュマル（シード63）と鉢が見える、BOTANICAL ODDITIESの実ゲーム画面',
+    color: '#e8eee5', coverStyle: 'illustration'
   }
 ];

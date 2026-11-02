@@ -8,6 +8,14 @@
 - 正式名・別称「爆速ゴミ収集」・5地点・スクーター/投げ込み/近道/ジャンプの紹介は、[公開ゲーム](https://cadmium2525.github.io/garbage-truck/)と[README](https://github.com/cadmium2525/garbage-truck/blob/main/README.md)、ゲーム実装を確認して作成しました。
 - ゲームの参照時main: `fee7da0ef6906c2b038c2853d2e10054eb6f860d`。ゲーム本体のリポジトリは変更していません。
 
+## 2026-11-03 BOTANICAL ODDITIES 追加
+
+- `plant-cover.webp`: BOTANICAL ODDITIESの実ゲーム描画から収録した、ガジュマルのシード63（`gajumaru:63`）「すらりべえ」です。ユーザー指定の種類・シードを使い、足組みの根・葉先・鉢全体が見えるよう撮影しました。個体IDはシードの36進表記 `000001R`、特徴は「足組み・気根の森・ミニマル」、SSR「幻の個体」です。
+- 原画: `C:/Users/森本/Documents/sagyou/plant-production/edit/qa/cover-landscape.png`（1280 × 800）。配信用画像は960 × 600、WebP quality 86。HUDを非表示にし、撮影用カメラを少し寄せています。個体の遺伝子・形状・レア度は変更していません。植物・鉢・背景は元のプログラム生成で、新規画像生成AIは使用していません。
+- 個体の記録: `plant-production/edit/qa/cover-evidence.json`、Chrome撮影環境で得た骨格JSONのSHA256 `66a3acc2d9a1691233f8d5957cf1fbdf8b9cbea3691124edff803a2ef92561cc`。正規の再現URLは [ガジュマル63](https://cadmium2525.github.io/plant/?debug=gajumaru:63) です。スマホのリスト表示では既存の `coverStyle: 'illustration'` で画像全体を収めます。
+- 作品名・紹介文・タグは[公開ゲーム](https://cadmium2525.github.io/plant/)と[README](https://github.com/cadmium2525/plant/blob/64218b71b9ae6d956d2ec7cf5ca7faec3179fb80/README.md)、育成・図鑑・スタジオ実装を確認して作成しました。参照main: `64218b71b9ae6d956d2ec7cf5ca7faec3179fb80`。ゲーム本体のリポジトリは変更していません。
+- ゲーム全体のLICENSEファイルや個別の画像・PV表示クレジット指定は見当たりません。Three.jsのMIT通知をゲーム全体のライセンスと解釈していません。
+
 ## 2026-11-01 SEESAW 追加
 
 - `seesaw-jump-cover.webp`: [公式OGPイラスト](https://github.com/cadmium2525/seesaw_jump/blob/f2463176af7b1f52814333deaa62be69cbdc1c9a/public/social.svg)。一つ目のカニ脚シーソー、空中の人、太陽と丘、作品名を描いた既存のSVG画像です。実プレイのスクリーンショットやAI生成画像ではありません。

@@ -107,3 +107,11 @@
 - 変更前 SHA256: `c200bc8c2c496e3eeb25c2d635f2ea0d3f7ac6640da91f9deac9414ce62b7d53`
 - 変更後 SHA256: `e6e2ed5a264cc4d8a52b32ade6931fcfd7d70a2fa565595e7827354bcd26b5e2`
 - 公式 Rules API のコンパイル結果: エラー・警告なし。調査時と公開直前のルール一致、許可リスト2箇所だけの変更、公開後のルールセット・ソース一致を確認しました。ゲームや集計のデータへの読み書きは行っていません。
+
+2026-11-03: `plant` を32番目の集計対象に追加しました。変更は `galleryProject`・`galleryOwnReceipt` の許可リストへの追加のみです。既存ゲーム、31作品の集計、日本時間での同日重複防止、本人だけの記録取得、加算以外の書き込み拒否は維持しています。
+
+- 変更前 ruleset: `projects/rakugakisuma/rulesets/9ed25684-c97f-4f49-aab3-ddd12e1079b1`
+- 変更後 ruleset: `projects/rakugakisuma/rulesets/d2914386-6f70-4d97-bfa4-41a8002fc332`
+- 変更前 SHA256: `e6e2ed5a264cc4d8a52b32ade6931fcfd7d70a2fa565595e7827354bcd26b5e2`
+- 変更後 SHA256: `1a37b30cadb0c355cb4246b54ffe90691f342e2403d1774353c9e82f0361f1d1`
+- 公式 Rules API のコンパイル結果: エラー・警告なし。調査時と公開直前のルール一致、許可リスト2箇所だけの変更、公開後のルールセット・ソース一致を確認しました。ゲームや集計のデータへの読み書きは行っていません。
