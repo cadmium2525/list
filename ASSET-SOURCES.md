@@ -1,5 +1,12 @@
 # 画像と紹介文の出典
 
+## 2026-11-04 SAND FLAG BATTLE 追加
+
+- `seesaw-sky-cover.webp`: SAND FLAG BATTLEの実ゲーム描画から収録した、頂上の赤い旗・砂山・黄色いショベルカー・赤いバケツの画面です。通常のひとり練習の開始状態を使い、HUDを非表示にして全体が収まるよう撮影用カメラを調整しました。砂・旗・道具のモデルやゲームの物理・判定は変更していません。
+- 原画: `C:/Users/森本/Documents/sagyou/seesaw-sky-production/edit/qa/cover-landscape.png`（1280 × 800）。配信用画像は960 × 600、WebP quality 86。モデル・砂のテクスチャ・背景は元のプログラム生成で、新規画像生成AIは使用していません。撮影状態は同じフォルダーの `cover-evidence.json` に記録しています。
+- スマホのリスト表示では既存の `coverStyle: 'illustration'` で画像全体を収めます。
+- 正式名・紹介文・4つの道具・対戦モード・タグは[公開ゲーム](https://cadmium2525.github.io/seesaw-sky/)と[README](https://github.com/cadmium2525/seesaw-sky/blob/251d9daa9ad78c67e57102f6f77cd9967e9e01c7/README.md)、ゲーム実装を確認して作成しました。参照main: `251d9daa9ad78c67e57102f6f77cd9967e9e01c7`。出典: © 2026 cadmium2525、[MIT License](https://github.com/cadmium2525/seesaw-sky/blob/251d9daa9ad78c67e57102f6f77cd9967e9e01c7/LICENSE)。ゲーム本体のリポジトリは変更していません。
+
 ## 2026-10-27 WAIT!! GOMI TRUCK!! 追加
 
 - `garbage-truck-cover.webp`: 作者のゲーム本体をローカルの撮影環境で動かした、Three.jsによる実ゲーム描画。青い収集車・袋を持つ主人公・赤いスクーターを回収地点で撮影しています。撮影用カメラを道路側へ配置し、HUDを外しました。画像生成AIは使用していません。

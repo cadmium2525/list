@@ -375,5 +375,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/plant',
     image: 'assets/plant-cover.webp', imageAlt: '足を組んだような根のガジュマル（シード63）と鉢が見える、BOTANICAL ODDITIESの実ゲーム画面',
     color: '#e8eee5', coverStyle: 'illustration'
+  },
+  {
+    order: 33, slug: 'seesaw-sky', kind: 'game',
+    title: 'SAND FLAG BATTLE', reading: 'さんどふらっぐばとる砂山旗取りすなやまはたとり',
+    subtitle: 'たくさん取れ。でも、旗を倒すな。',
+    description: '砂山の旗を倒さないよう、交互に砂を取り合う3D対戦ゲーム。素手からショベルカーまで4つの道具を使い分け、崩れ方を読みながら獲得量を競おう。CPU戦・同じ端末で2人対戦・ひとり練習が楽しめる。',
+    tags: ['対戦', '3D', '駆け引き'],
+    url: 'https://cadmium2525.github.io/seesaw-sky/',
+    github: 'https://github.com/cadmium2525/seesaw-sky',
+    image: 'assets/seesaw-sky-cover.webp', imageAlt: '頂上の赤い旗と砂山、黄色いショベルカーと赤いバケツが見えるSAND FLAG BATTLEの実ゲーム画面',
+    color: '#f2e5cc', coverStyle: 'illustration'
   }
 ];
