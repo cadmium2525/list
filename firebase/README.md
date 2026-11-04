@@ -123,3 +123,11 @@
 - 変更前 SHA256: `1a37b30cadb0c355cb4246b54ffe90691f342e2403d1774353c9e82f0361f1d1`
 - 変更後 SHA256: `dda2a402fceb801032a95caedd7452953fee08a06d21d5ebe9f4afeded2e1d6d`
 - 公式 Rules API のコンパイル結果: エラー・警告なし。調査時と公開直前のルール一致、許可リスト2箇所だけの変更、公開後のルールセット・ソース一致を確認しました。ゲームや集計のデータへの読み書きは行っていません。
+
+2026-11-04: `Crab-sumo` を34番目の集計対象に追加しました。変更は `galleryProject`・`galleryOwnReceipt` の許可リストへの追加のみです。URLと同じ大文字小文字を維持しています。既存ゲーム、33作品の集計、日本時間での同日重複防止、本人だけの記録取得、加算以外の書き込み拒否は維持しています。
+
+- 変更前 ruleset: `projects/rakugakisuma/rulesets/a3f69a6b-26e1-4950-b40a-98abcacceb14`
+- 変更後 ruleset: `projects/rakugakisuma/rulesets/261a02a7-4f92-46ae-b83d-6c0ac10289d0`
+- 変更前 SHA256: `dda2a402fceb801032a95caedd7452953fee08a06d21d5ebe9f4afeded2e1d6d`
+- 変更後 SHA256: `306aa4c1108c312b961fe4d2653e63fa7bbc9ca7617c6b1c4056a6b6aaec4614`
+- 公式 Rules API のコンパイル結果: エラー・警告なし。調査時と公開直前のルール一致、許可リスト2箇所だけの変更、公開後のルールセット・ソース一致を確認しました。ゲームや集計のデータへの読み書きは行っていません。

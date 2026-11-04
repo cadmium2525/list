@@ -386,5 +386,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/seesaw-sky',
     image: 'assets/seesaw-sky-cover.webp', imageAlt: '頂上の赤い旗と砂山、黄色いショベルカーと赤いバケツが見えるSAND FLAG BATTLEの実ゲーム画面',
     color: '#f2e5cc', coverStyle: 'illustration'
+  },
+  {
+    order: 34, slug: 'Crab-sumo', kind: 'game',
+    title: '相撲クラブ', reading: 'すもうくらぶかにずもうカニ相撲crabsumo',
+    subtitle: 'つかまえて、育てて、はっけよい。',
+    description: '川や海でカニをつかまえ、水槽で育ててカニ相撲に挑む3Dゲーム。石めくりやカゴ罠で14種のカニに出会い、気合を入れたり取組中につついたりして、個性豊かな相棒と勝ち進もう。',
+    tags: ['育成', '対戦', '3D'],
+    url: 'https://cadmium2525.github.io/Crab-sumo/',
+    github: 'https://github.com/cadmium2525/Crab-sumo',
+    image: 'assets/crab-sumo-cover.webp', imageAlt: '切り株の土俵で向かい合う2匹のカニが見える、相撲クラブの実ゲーム画面',
+    color: '#e8edd8', coverStyle: 'illustration'
   }
 ];

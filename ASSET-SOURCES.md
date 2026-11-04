@@ -1,5 +1,13 @@
 # 画像と紹介文の出典
 
+## 2026-11-04 相撲クラブ 追加
+
+- `crab-sumo-cover.webp`: 相撲クラブの実ゲーム描画から収録した、切り株の土俵で対峙するシオマネキとサワガニ「カニオ」の画面です。通常操作で捕獲したシオマネキを初戦に出し、HUDを非表示にして全身・ハサミ・白い仕切り線が見えるよう撮影用カメラを調整しました。個体・モデル・能力・勝敗は変更していません。
+- 原画: `C:/Users/森本/Documents/sagyou/crab-sumo-production/edit/qa/cover-landscape.png`（1280 × 800）。配信用画像は960 × 600、WebP quality 86。カニ・切り株・草・岩のモデルとテクスチャは元のプログラム生成で、新規画像生成AIは使用していません。撮影状態は同じフォルダーの `cover-evidence.json`、通常捕獲した個体は `crab-sumo-production/earned-save.json` に記録しています。
+- スマホのリスト表示では既存の `coverStyle: 'illustration'` で画像全体を収めます。
+- 正式名・紹介文・14種・遊び方・タグは[公開ゲーム](https://cadmium2525.github.io/Crab-sumo/)と[README](https://github.com/cadmium2525/Crab-sumo/blob/83cc4964df9fa7056baad8de6636355f6635f6d5/README.md)、ゲーム実装を確認して作成しました。参照main: `83cc4964df9fa7056baad8de6636355f6635f6d5`。紹介キャッチ「つかまえて、育てて、はっけよい。」は当サイト用の編集文です。ゲーム本体のリポジトリは変更していません。
+- ゲーム全体のLICENSEファイルや個別の画像・PV表示クレジット指定は見当たりません。同梱Three.js r170のMIT通知をゲーム全体のライセンスとは解釈していません。
+
 ## 2026-11-04 SAND FLAG BATTLE 追加
 
 - `seesaw-sky-cover.webp`: SAND FLAG BATTLEの実ゲーム描画から収録した、頂上の赤い旗・砂山・黄色いショベルカー・赤いバケツの画面です。通常のひとり練習の開始状態を使い、HUDを非表示にして全体が収まるよう撮影用カメラを調整しました。砂・旗・道具のモデルやゲームの物理・判定は変更していません。
