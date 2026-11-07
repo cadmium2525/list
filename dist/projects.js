@@ -397,5 +397,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/Crab-sumo',
     image: 'assets/crab-sumo-cover.webp', imageAlt: '切り株の土俵で向かい合う2匹のカニが見える、相撲クラブの実ゲーム画面',
     color: '#e8edd8', coverStyle: 'illustration'
+  },
+  {
+    order: 35, slug: '581run', kind: 'game',
+    title: '581万人100m走', reading: 'ごひゃくはちじゅういちまんにんひゃくめーとるそう581run',
+    subtitle: '最下位から、1位へ。',
+    description: '5,812,375人の小学生が一斉に駆け出す、架空の3D・100m走。最後尾からスタートし、横ステップやジャンプで転倒の連鎖をかわして、ダッシュで1位を目指そう。',
+    tags: ['レース', 'アクション', '3D'],
+    url: 'https://cadmium2525.github.io/581run/',
+    github: 'https://github.com/cadmium2525/581run',
+    image: 'assets/581run-cover.webp', imageAlt: '青い帽子とオレンジの服の主人公、前方の大群衆とGOALが見える581万人100m走の実ゲーム画面',
+    color: '#e9eddf', coverStyle: 'illustration'
   }
 ];

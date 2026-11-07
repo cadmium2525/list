@@ -131,3 +131,11 @@
 - 変更前 SHA256: `dda2a402fceb801032a95caedd7452953fee08a06d21d5ebe9f4afeded2e1d6d`
 - 変更後 SHA256: `306aa4c1108c312b961fe4d2653e63fa7bbc9ca7617c6b1c4056a6b6aaec4614`
 - 公式 Rules API のコンパイル結果: エラー・警告なし。調査時と公開直前のルール一致、許可リスト2箇所だけの変更、公開後のルールセット・ソース一致を確認しました。ゲームや集計のデータへの読み書きは行っていません。
+
+2026-11-07: `581run` を35番目の集計対象に追加しました。変更は `galleryProject`・`galleryOwnReceipt` の許可リストへの追加のみです。既存ゲーム、34作品の集計、日本時間での同日重複防止、本人だけの記録取得、加算以外の書き込み拒否は維持しています。
+
+- 変更前 ruleset: `projects/rakugakisuma/rulesets/261a02a7-4f92-46ae-b83d-6c0ac10289d0`
+- 変更後 ruleset: `projects/rakugakisuma/rulesets/3b9c9dfe-90fe-4718-bb58-dbf2f169aebc`
+- 変更前 SHA256: `306aa4c1108c312b961fe4d2653e63fa7bbc9ca7617c6b1c4056a6b6aaec4614`
+- 変更後 SHA256: `50266d11feef754ebf180456c1f7484024416370964d776cc009e618db03da8f`
+- 公式 Rules API のコンパイル結果: エラー・警告なし。中断後の本番再確認、公開直前の競合確認、許可リスト2箇所だけの変更、公開後のルールセット・ソース一致を確認しました。ゲームや集計のデータへの読み書きは行っていません。
