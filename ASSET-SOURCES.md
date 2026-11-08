@@ -1,5 +1,12 @@
 # 画像と紹介文の出典
 
+## 2026-11-08 GEDDAN DRAW 追加
+
+- `geddan-cover.webp`: GEDDAN DRAWの公式サンプルキャラクターと「グルグル」の線を、元の `buildDance`・`renderDance` で描画した静止画です。再生0.75秒の猫耳のキャラクター、伸びた手足、残像を収めています。
+- 原画: `C:/Users/森本/Documents/sagyou/geddan-research/geddan-cover-original.png`（1020 × 600）。既存カードの縦横比に合わせ、描画用ステージの論理幅を900から1020へ調整しました。配信用画像は960 × 565、WebP quality 86。元のカメラと描画関数を使い、ステージ全体を出力しています。新規画像生成AIは使用していません。
+- 描画条件は `geddan-research/cover-evidence.json` に記録しています。キャラクター全身がカード枠に収まり、スマホのリスト表示では既存の `coverStyle: 'illustration'` で画像全体を表示します。
+- 正式名・紹介文・タグは[公開ゲーム](https://cadmium2525.github.io/geddan/)と[README](https://github.com/cadmium2525/geddan/blob/9ddc8245d98972f40632b14c35aed3628556a348/README.md)、ゲーム実装を確認して作成しました。参照main: `9ddc8245d98972f40632b14c35aed3628556a348`。ゲーム全体のLICENSEファイルや個別の画像表示クレジット指定は見当たりません。
+
 ## 2026-11-07 581万人100m走 追加
 
 - `581run-cover.webp`: 581万人100m走の元ゲーム描画を使った通常レースの画面です。青い帽子とオレンジの服の主人公、前方の群衆、GOALを収めています。ゲームの標準入力データでシミュレーションを進め、HUDを非表示にした横画面の標準カメラ（FOV60°）で描画しました。

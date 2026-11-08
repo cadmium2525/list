@@ -408,5 +408,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/581run',
     image: 'assets/581run-cover.webp', imageAlt: '青い帽子とオレンジの服の主人公、前方の大群衆とGOALが見える581万人100m走の実ゲーム画面',
     color: '#e9eddf', coverStyle: 'illustration'
+  },
+  {
+    order: 36, slug: 'geddan', kind: 'game',
+    title: 'GEDDAN DRAW', reading: 'げっだんどろーゲッダンgeddandraw',
+    subtitle: '描いたキャラが、線に合わせて踊り出す。',
+    description: '描いたキャラクターを、一筆書きの線で踊らせるお絵かきゲーム。ぐるぐる・ジグザグ・描く速さが全身のダンスに変わり、BGM付きの動画やPNGで保存・共有できる。',
+    tags: ['お絵かき', 'ダンス', '音楽'],
+    url: 'https://cadmium2525.github.io/geddan/',
+    github: 'https://github.com/cadmium2525/geddan',
+    image: 'assets/geddan-cover.webp', imageAlt: '猫耳のサンプルキャラクターが手足を伸ばして踊る、GEDDAN DRAWのゲーム描画',
+    color: '#f2e9fd', coverStyle: 'illustration'
   }
 ];
