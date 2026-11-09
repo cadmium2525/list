@@ -1,5 +1,11 @@
 # 画像と紹介文の出典
 
+## 2026-11-09 どんぶりメーカー 追加
+
+- `donburi-maker-cover.webp`: 元ゲームのCanvasで仕上げた「彩り海鮮丼」と「花畑丼」を並べた画像です。左は藍の唐草の器にマグロ・中トロ・サーモン・いくら・うに、右はさくらの器に厚焼き玉子の花びらと卵黄を盛り付けています。元の器と具材を使い、どちらも丼全体が見える構図です。
+- 原画: `C:/Users/森本/Documents/sagyou/donburi-maker-production/edit/qa/cover-landscape.png`（1280 × 752）。配信用画像は960 × 564、WebP quality 86。ゲームの `renderFull` 出力を横に並べ、新規画像生成AIは使用していません。スマホのリスト表示では既存の `coverStyle: 'illustration'` で画像全体を表示します。
+- 正式名・紹介文・タグは[公開ゲーム](https://cadmium2525.github.io/donburi_maker/)と[README](https://github.com/cadmium2525/donburi_maker/blob/18d4e6aa26ce3bcd9e04d1aafc966b1db267fe0a/README.md)、器・具材・加工・シェアの実装を確認して作成しました。参照main: `18d4e6aa26ce3bcd9e04d1aafc966b1db267fe0a`。ゲーム全体のLICENSEファイルや個別の画像表示クレジット指定は見当たりません。
+
 ## 2026-11-08 GEDDAN DRAW 追加
 
 - `geddan-cover.webp`: GEDDAN DRAWの公式サンプルキャラクターと「グルグル」の線を、元の `buildDance`・`renderDance` で描画した静止画です。再生0.75秒の猫耳のキャラクター、伸びた手足、残像を収めています。

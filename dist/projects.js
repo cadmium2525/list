@@ -419,5 +419,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/geddan',
     image: 'assets/geddan-cover.webp', imageAlt: '猫耳のサンプルキャラクターが手足を伸ばして踊る、GEDDAN DRAWのゲーム描画',
     color: '#f2e9fd', coverStyle: 'illustration'
+  },
+  {
+    order: 37, slug: 'donburi_maker', kind: 'game',
+    title: 'どんぶりメーカー', reading: 'どんぶりめーかー丼donburimaker',
+    subtitle: '好きな具で、自分だけの一杯。',
+    description: '器を選んでごはんをよそい、90種以上の具材を自由に盛り付けるお料理ゲーム。フィルターやスタンプで仕上げ、名前を付けた自分だけの丼を画像で保存・シェアしよう。',
+    tags: ['料理', 'ものづくり', 'カスタマイズ'],
+    url: 'https://cadmium2525.github.io/donburi_maker/',
+    github: 'https://github.com/cadmium2525/donburi_maker',
+    image: 'assets/donburi-maker-cover.webp', imageAlt: '藍の唐草の彩り海鮮丼と、さくらの器に玉子の花を盛った花畑丼を並べたゲーム描画',
+    color: '#f7eadc', coverStyle: 'illustration'
   }
 ];

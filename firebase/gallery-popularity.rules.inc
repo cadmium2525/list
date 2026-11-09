@@ -8,7 +8,7 @@
           'souiuimi', 'kanji-tower', 'leaf-stream-race', 'guchitter', 'mato',
           'BOUNCEPARADE', 'garbage-truck', 'senju-otedama',
           'climbing-the-mast', 'ishikoro', 'command', 'baby-race',
-          'antlion', 'hokorichan', 'pancake', 'nira', 'horse10-000', 'akashiro', 'seesaw_jump', 'plant', 'seesaw-sky', 'Crab-sumo', '581run', 'geddan'
+          'antlion', 'hokorichan', 'pancake', 'nira', 'horse10-000', 'akashiro', 'seesaw_jump', 'plant', 'seesaw-sky', 'Crab-sumo', '581run', 'geddan', 'donburi_maker'
         ];
       }
 
@@ -41,7 +41,7 @@
           'climbing-the-mast_' + uid,
           'ishikoro_' + uid, 'command_' + uid, 'baby-race_' + uid,
           'antlion_' + uid, 'hokorichan_' + uid, 'pancake_' + uid,
-          'nira_' + uid, 'horse10-000_' + uid, 'akashiro_' + uid, 'seesaw_jump_' + uid, 'plant_' + uid, 'seesaw-sky_' + uid, 'Crab-sumo_' + uid, '581run_' + uid, 'geddan_' + uid
+          'nira_' + uid, 'horse10-000_' + uid, 'akashiro_' + uid, 'seesaw_jump_' + uid, 'plant_' + uid, 'seesaw-sky_' + uid, 'Crab-sumo_' + uid, '581run_' + uid, 'geddan_' + uid, 'donburi_maker_' + uid
         ];
       }
 
