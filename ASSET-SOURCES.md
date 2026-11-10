@@ -1,5 +1,10 @@
 # 画像と紹介文の出典
 
+## 2026-11-10 しらすの山 追加
+
+- `chirimen-cover.webp`: 山とクレーン、コンベア、包装機が写ったゲームの公式紹介画像です。原画（1200 × 630）を縦横比を保って縮小し、上下に余白を加えた960 × 565のWebP（quality 86）に変換しました。カードの枠でタイトルや設備が見切れないようにしています。[公式画像の原本](https://github.com/cadmium2525/chirimen/blob/fdb7d1c32dd6d3dc742b64faa0142caaf7b36783/public/og.png)
+- 正式名・紹介文・タグは、公開ゲームとREADMEの山・物流・収集の説明を参照しています。[公開ゲーム](https://cadmium2525.github.io/chirimen/)・[README](https://github.com/cadmium2525/chirimen/blob/fdb7d1c32dd6d3dc742b64faa0142caaf7b36783/README.md)
+
 ## 2026-11-09 どんぶりメーカー 追加
 
 - `donburi-maker-cover.webp`: 元ゲームのCanvasで仕上げた「彩り海鮮丼」と「花畑丼」を並べた画像です。左は藍の唐草の器にマグロ・中トロ・サーモン・いくら・うに、右はさくらの器に厚焼き玉子の花びらと卵黄を盛り付けています。元の器と具材を使い、どちらも丼全体が見える構図です。

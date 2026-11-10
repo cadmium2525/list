@@ -430,5 +430,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/donburi_maker',
     image: 'assets/donburi-maker-cover.webp', imageAlt: '藍の唐草の彩り海鮮丼と、さくらの器に玉子の花を盛った花畑丼を並べたゲーム描画',
     color: '#f7eadc', coverStyle: 'illustration'
+  },
+  {
+    order: 38, slug: 'chirimen', kind: 'game',
+    title: 'しらすの山', reading: 'しらすのやまちりめんちりもんchirimen',
+    subtitle: 'ひとつまみから、工場へ。',
+    description: '1,000万匹のしらすをつまみ、計量して出荷する一人称3Dゲーム。道具やコンベアで作業を自動化しながら、山に埋まった7種類の「ちりモン」を見つけて図鑑に集めよう。',
+    tags: ['3D', '自動化', 'コレクション'],
+    url: 'https://cadmium2525.github.io/chirimen/',
+    github: 'https://github.com/cadmium2525/chirimen',
+    image: 'assets/chirimen-cover.webp', imageAlt: 'しらすの山とクレーン、コンベア、包装機が並ぶ「しらすの山」の公式紹介画像',
+    color: '#e7eef1', coverStyle: 'illustration'
   }
 ];
