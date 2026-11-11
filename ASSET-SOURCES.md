@@ -1,5 +1,10 @@
 # 画像と紹介文の出典
 
+## 2026-11-11 THE MENKO 追加
+
+- `the-menko-cover.webp` は、緑の稲妻柄のメンコを使った無双モードの3D描画です。PV用に撮影した着弾後の1フレームを、1280 × 752から960 × 564のWebP（quality 86）に縮小しました。原画は `the-menko-production/edit/qa/cover-1260.png` です。[撮影に使ったゲームのソース](https://github.com/cadmium2525/THE_MENKO/tree/98cf36e731327dcaf2a5d65e4c51bfa294249634)
+- 紹介文とタグは、工作、無双、対決の説明を参照しています。[公開ゲーム](https://cadmium2525.github.io/THE_MENKO/)・[README](https://github.com/cadmium2525/THE_MENKO/blob/98cf36e731327dcaf2a5d65e4c51bfa294249634/README.md)
+
 ## 2026-11-10 しらすの山 追加
 
 - `chirimen-cover.webp`: 山とクレーン、コンベア、包装機が写ったゲームの公式紹介画像です。原画（1200 × 630）を縦横比を保って縮小し、上下に余白を加えた960 × 565のWebP（quality 86）に変換しました。カードの枠でタイトルや設備が見切れないようにしています。[公式画像の原本](https://github.com/cadmium2525/chirimen/blob/fdb7d1c32dd6d3dc742b64faa0142caaf7b36783/public/og.png)

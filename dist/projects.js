@@ -441,5 +441,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/chirimen',
     image: 'assets/chirimen-cover.webp', imageAlt: 'しらすの山とクレーン、コンベア、包装機が並ぶ「しらすの山」の公式紹介画像',
     color: '#e7eef1', coverStyle: 'illustration'
+  },
+  {
+    order: 39, slug: 'THE_MENKO', kind: 'game',
+    title: 'THE MENKO', reading: 'ざめんこめんこ',
+    subtitle: '切って、描いて、ひっくり返す。',
+    description: '紙の厚みや輪郭、表裏の絵を決めて、自分だけのメンコを作る3Dアクション。地面を狙って打ち、5ウェーブの無双や、CPU・同じ端末での2人対決を楽しもう。',
+    tags: ['工作', 'アクション', '対戦'],
+    url: 'https://cadmium2525.github.io/THE_MENKO/',
+    github: 'https://github.com/cadmium2525/THE_MENKO',
+    image: 'assets/the-menko-cover.webp', imageAlt: '緑の稲妻柄のメンコが着弾し、色とりどりのメンコが舞う無双モードの3D画面',
+    color: '#f4e5ce', coverStyle: 'illustration'
   }
 ];

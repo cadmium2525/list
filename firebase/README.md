@@ -163,3 +163,11 @@
 - 変更前 SHA256: `253a175af3a1491360630f5719a3af187be704dae406c608280ba408e29c4a73`
 - 変更後 SHA256: `6b32c19c9918b9ceba32692be8dad060b8cc55e1c01182446f865adeb8e3f19d`
 - 公式 Rules API のコンパイル結果: エラー・警告なし。本番基準と公開直前の競合確認、許可リスト2箇所だけの変更、公開後のルールセット・ソース一致を確認しました。ゲームや集計のデータへの読み書きは行っていません。
+
+2026-11-11: `THE_MENKO` を39番目の集計対象に追加しました。変更は `galleryProject`・`galleryOwnReceipt` の許可リストへの追加のみです。URLと同じ大文字小文字を維持しています。既存ゲーム、38作品の集計、日本時間での同日重複防止、本人だけの記録取得、加算以外の書き込み拒否は維持しています。
+
+- 変更前 ruleset: `projects/rakugakisuma/rulesets/f0deba6e-6076-4b61-b8f9-a74b4d21545f`
+- 変更後 ruleset: `projects/rakugakisuma/rulesets/53c62a8f-afe1-44c6-a3d7-1b7c148f2012`
+- 変更前 SHA256: `6b32c19c9918b9ceba32692be8dad060b8cc55e1c01182446f865adeb8e3f19d`
+- 変更後 SHA256: `fdf0e4fd3eae5cf25c2f17a906a8a4f018aa4a439012c72fd6eaaac99db46413`
+- 公式 Rules API のコンパイル結果: エラー・警告なし。本番基準と公開直前の競合確認、許可リスト2箇所だけの変更、公開後のルールセット・ソース一致を確認しました。ゲームや集計のデータへの読み書きは行っていません。
