@@ -452,5 +452,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/THE_MENKO',
     image: 'assets/the-menko-cover.webp', imageAlt: '緑の稲妻柄のメンコが着弾し、色とりどりのメンコが舞う無双モードの3D画面',
     color: '#f4e5ce', coverStyle: 'illustration'
+  },
+  {
+    order: 40, slug: 'shodo', kind: 'game',
+    title: '泥酔書道パフォーマンス！', reading: 'でいすいしょどうぱふぉーまんす',
+    subtitle: '千鳥足で、渾身の一筆。',
+    description: '千鳥足で巨大な紙を歩き、お題の文字を書く3D書道ゲーム。硯で墨を補給しながら制限時間内に書き上げよう。作品は金屏風の前に飾られ、お手本との一致率や段位、講評が表示される。',
+    tags: ['3D', '書道', 'お絵かき'],
+    url: 'https://cadmium2525.github.io/shodo/',
+    github: 'https://github.com/cadmium2525/shodo',
+    image: 'assets/shodo-cover.webp', imageAlt: '金屏風の前に墨の足跡がついた「山」の掛け軸が飾られ、大筆を持つ主人公の周りに紙吹雪が舞うゲーム画面',
+    color: '#f4e9cc', coverStyle: 'illustration'
   }
 ];

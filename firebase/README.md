@@ -171,3 +171,11 @@
 - 変更前 SHA256: `6b32c19c9918b9ceba32692be8dad060b8cc55e1c01182446f865adeb8e3f19d`
 - 変更後 SHA256: `fdf0e4fd3eae5cf25c2f17a906a8a4f018aa4a439012c72fd6eaaac99db46413`
 - 公式 Rules API のコンパイル結果: エラー・警告なし。本番基準と公開直前の競合確認、許可リスト2箇所だけの変更、公開後のルールセット・ソース一致を確認しました。ゲームや集計のデータへの読み書きは行っていません。
+
+2026-11-13: `shodo` を40番目の集計対象に追加しました。カウンターと当日記録の許可リストの2箇所を更新しました。
+
+- 変更前 ruleset: `projects/rakugakisuma/rulesets/53c62a8f-afe1-44c6-a3d7-1b7c148f2012`
+- 変更後 ruleset: `projects/rakugakisuma/rulesets/25b75925-0132-4c05-8725-8a3141a13361`
+- 変更前 SHA256: `fdf0e4fd3eae5cf25c2f17a906a8a4f018aa4a439012c72fd6eaaac99db46413`
+- 変更後 SHA256: `21b64787361b77ea0594af370650843a3e80fc2a690cc9f9b1e0e5da55f81cd6`
+- 公式 Rules API のコンパイル結果: エラー・警告なし。公開前後のソースを照合し、既存ルールが保たれていることを確認しました。

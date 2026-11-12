@@ -1,5 +1,10 @@
 # 画像と紹介文の出典
 
+## 2026-11-13 泥酔書道パフォーマンス！ 追加
+
+- `shodo-cover.webp` は、お題の「山」が金屏風の前に展示される実ゲーム画面です。紙吹雪、大筆を持つ主人公、墨の足跡が写る範囲を `shodo-production/capture/qa/cover-result-180.png` から切り出し、960 × 564のWebPにしました。[撮影に使ったゲームのソース](https://github.com/cadmium2525/shodo/tree/8527a212db79e7b30d85d8e08787c7a52bc8e8d8)
+- 作品名と紹介文は、墨補給、制限時間、採点、展示の仕様を参照しています。撮影に使ったソースと公開版のHTML、描画、操作、スタイルの主要ファイルを照合しました。[公開ゲーム](https://cadmium2525.github.io/shodo/)・[README](https://github.com/cadmium2525/shodo/blob/8527a212db79e7b30d85d8e08787c7a52bc8e8d8/README.md)
+
 ## 2026-11-11 THE MENKO 追加
 
 - `the-menko-cover.webp` は、緑の稲妻柄のメンコを使った無双モードの3D描画です。PV用に撮影した着弾後の1フレームを、1280 × 752から960 × 564のWebP（quality 86）に縮小しました。原画は `the-menko-production/edit/qa/cover-1260.png` です。[撮影に使ったゲームのソース](https://github.com/cadmium2525/THE_MENKO/tree/98cf36e731327dcaf2a5d65e4c51bfa294249634)
