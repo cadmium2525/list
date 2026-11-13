@@ -463,5 +463,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/shodo',
     image: 'assets/shodo-cover.webp', imageAlt: '金屏風の前に墨の足跡がついた「山」の掛け軸が飾られ、大筆を持つ主人公の周りに紙吹雪が舞うゲーム画面',
     color: '#f4e9cc', coverStyle: 'illustration'
+  },
+  {
+    order: 41, slug: '3DSTG', kind: 'game',
+    title: 'BLOOM DIVE', reading: 'ぶるーむだいぶ',
+    subtitle: '弾幕をかすめ、星の海を駆け抜けろ。',
+    description: '光の少女ルミナをドラッグで操る、スマホ縦画面の3D弾幕シューティング。敵弾をかすめて得点を稼ぎ、光の玉でショットを強化。ボムで弾を星に変えながら、星海から深淵まで全3ステージに挑もう。',
+    tags: ['シューティング', '弾幕', '3D'],
+    url: 'https://cadmium2525.github.io/3DSTG/',
+    github: 'https://github.com/cadmium2525/3DSTG',
+    image: 'assets/bloom-dive-cover.webp', imageAlt: '星海を飛ぶルミナの前に、アストルムの桃色と水色の螺旋弾幕が広がるゲーム画面',
+    color: '#eadff0', coverStyle: 'illustration'
   }
 ];

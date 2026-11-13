@@ -1,5 +1,10 @@
 # 画像と紹介文の出典
 
+## 2026-11-14 BLOOM DIVE 追加
+
+- `bloom-dive-cover.webp` は、星海のボス「星環の花冠 アストルム」に光の少女ルミナが挑む実ゲーム画面です。公開版の描画を収録した `3dstg-production/capture/qa/cover-astrum-0.png` から、ルミナと桃色・水色の螺旋弾幕が写る範囲を切り出し、960 × 564のWebPにしました。[公開ゲーム](https://cadmium2525.github.io/3DSTG/)
+- 作品名と紹介文は、グレイズ、光の玉、ボム、全3ステージの実装を参照しています。[構成ドキュメント](https://github.com/cadmium2525/3DSTG/blob/73269379f7632daf7a719c73e26519e1ac3f5ab5/docs/ARCHITECTURE.md)・[ステージの仕様](https://github.com/cadmium2525/3DSTG/blob/73269379f7632daf7a719c73e26519e1ac3f5ab5/docs/STAGES.md)
+
 ## 2026-11-13 泥酔書道パフォーマンス！ 追加
 
 - `shodo-cover.webp` は、お題の「山」が金屏風の前に展示される実ゲーム画面です。紙吹雪、大筆を持つ主人公、墨の足跡が写る範囲を `shodo-production/capture/qa/cover-result-180.png` から切り出し、960 × 564のWebPにしました。[撮影に使ったゲームのソース](https://github.com/cadmium2525/shodo/tree/8527a212db79e7b30d85d8e08787c7a52bc8e8d8)
