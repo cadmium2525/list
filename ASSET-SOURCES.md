@@ -1,5 +1,10 @@
 # 画像と紹介文の出典
 
+## 2026-11-19 音避け OTOYOKE 追加
+
+- `otoyoke-cover.webp` は、紫のネオンのステージで棒人間がノーツを避ける実ゲーム描画です。横幅を広げたCanvas画面 `otoyoke-production/capture/qa/slide-3.png` から棒人間と床ノーツ、高いバーが収まる部分を切り出し、960 × 564のWebPにしました。[公開ゲーム](https://cadmium2525.github.io/otoyoke/)
+- 作品名と紹介文は、音ゲーのオートプレイ、4列移動、ノーツ回避、スライディングの説明と実装を参照しています。公開版の主要7ファイルを固定コミットと照合しました。[README](https://github.com/cadmium2525/otoyoke/blob/5d44631b9cc8dd9bef7a1b8f6c20d70260b2fe08/README.md)・[ゲームのソース](https://github.com/cadmium2525/otoyoke/tree/5d44631b9cc8dd9bef7a1b8f6c20d70260b2fe08)
+
 ## 2026-11-14 BLOOM DIVE 追加
 
 - `bloom-dive-cover.webp` は、星海のボス「星環の花冠 アストルム」に光の少女ルミナが挑む実ゲーム画面です。公開版の描画を収録した `3dstg-production/capture/qa/cover-astrum-0.png` から、ルミナと桃色・水色の螺旋弾幕が写る範囲を切り出し、960 × 564のWebPにしました。[公開ゲーム](https://cadmium2525.github.io/3DSTG/)

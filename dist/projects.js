@@ -474,5 +474,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/3DSTG',
     image: 'assets/bloom-dive-cover.webp', imageAlt: '星海を飛ぶルミナの前に、アストルムの桃色と水色の螺旋弾幕が広がるゲーム画面',
     color: '#eadff0', coverStyle: 'illustration'
+  },
+  {
+    order: 42, slug: 'otoyoke', kind: 'game',
+    title: '音避け OTOYOKE', reading: 'おとよけ',
+    subtitle: '音ゲーは全自動。きみは、よけろ。',
+    description: '音楽に合わせて迫るノーツを、棒人間でよけるリズムアクション。4列を移動して床やロングノーツをかわし、高いバーはスライディングでくぐろう。音ゲーのフルコンボを背に、生き残れるか。',
+    tags: ['音楽', 'アクション', '回避'],
+    url: 'https://cadmium2525.github.io/otoyoke/',
+    github: 'https://github.com/cadmium2525/otoyoke',
+    image: 'assets/otoyoke-cover.webp', imageAlt: '紫のネオンのステージで左列に移動する棒人間と、奥から迫る床ノーツや高いバーのゲーム画面',
+    color: '#e5e5f4', coverStyle: 'illustration'
   }
 ];

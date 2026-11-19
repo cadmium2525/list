@@ -187,3 +187,11 @@
 - 変更前 SHA256: `21b64787361b77ea0594af370650843a3e80fc2a690cc9f9b1e0e5da55f81cd6`
 - 変更後 SHA256: `54ef0d16454bc4cd2dd33a9f58e27b02ba680a4ea47c7b3535910751f05b4081`
 - 公式 Rules API のコンパイル結果: エラー・警告なし。公開前後のソースを照合し、既存ルールが保たれていることを確認しました。
+
+2026-11-19: `otoyoke` を42番目の集計対象に追加しました。カウンターと当日記録の許可リストの2箇所を更新しました。
+
+- 変更前 ruleset: `projects/rakugakisuma/rulesets/47927397-219e-4e91-bd59-d5709b70c112`
+- 変更後 ruleset: `projects/rakugakisuma/rulesets/e9bf9336-d060-4125-8bd6-094a8ab8ed5c`
+- 変更前 SHA256: `54ef0d16454bc4cd2dd33a9f58e27b02ba680a4ea47c7b3535910751f05b4081`
+- 変更後 SHA256: `c9525482de59c9ca0f78f663ba8dc7a5594e2e6509144bcc0b8e1c8247e6c098`
+- 公式 Rules API のコンパイル結果: エラー・警告なし。公開前後のソースを照合し、既存ルールが保たれていることを確認しました。
