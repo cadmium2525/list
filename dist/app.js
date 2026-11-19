@@ -7,6 +7,7 @@
   const sort = $('sort');
   const filters = $('tag-filters');
   const popularity = window.CADMIUM_POPULARITY;
+  const viewModes = ['grid', 'list', 'thumbs'];
   let popularityState = popularity?.getState() || { status: 'unavailable', counts: null, updatedAt: null };
   let popularityRefresh;
   const normalise = text => text.normalize('NFKC').toLocaleLowerCase('ja').replace(/[\u30a1-\u30f6]/g, c => String.fromCharCode(c.charCodeAt(0) - 0x60));
@@ -20,9 +21,9 @@
   let activeKind = ['game', 'tool'].includes(params.get('kind')) ? params.get('kind') : '';
   if (activeTag && activeKind && !projects.some(p => kindOf(p) === activeKind && p.tags.includes(activeTag))) activeTag = '';
   let expandedTags = false;
-  let view = params.get('view') === 'list' ? 'list' : 'grid';
+  let view = viewModes.includes(params.get('view')) ? params.get('view') : 'grid';
   search.value = (params.get('q') || '').slice(0, 100);
-  sort.value = ['name-asc', 'name-desc', 'popular'].includes(params.get('sort')) ? params.get('sort') : 'default';
+  sort.value = ['newest', 'name-asc', 'name-desc', 'popular'].includes(params.get('sort')) ? params.get('sort') : 'default';
   let visibleProjects = [];
 
   function make(tag, className, text) {
@@ -89,6 +90,26 @@
       Promise.resolve(popularity.recordOpen(link.dataset.openSlug)).catch(() => {});
     } catch (_) { /* Counting must never interrupt opening a work. */ }
   }
+  function createProjectImage(project, className, alt) {
+    const image = make('img', className);
+    image.src = project.image;
+    image.alt = alt;
+    image.loading = 'lazy';
+    image.decoding = 'async';
+    image.width = 680;
+    image.height = 400;
+    return image;
+  }
+  function createThumbnail(project) {
+    const link = externalLink(project.url, 'project-thumbnail', project.title);
+    link.dataset.openSlug = project.slug;
+    link.title = project.title;
+    link.style.setProperty('--cover-color', project.color);
+    if (project.position) link.style.setProperty('--cover-position', project.position);
+    if (['app-icon', 'interface', 'portrait', 'punch'].includes(project.coverStyle)) link.classList.add('thumbnail-contain');
+    link.append(createProjectImage(project, 'thumbnail-image', ''));
+    return link;
+  }
   function createCard(project, position) {
     const card = make('article', 'project-card');
     card.dataset.kind = kindOf(project);
@@ -99,13 +120,7 @@
     const imageLink = externalLink(project.url, 'project-image-link', project.title + 'を開く');
     imageLink.dataset.openSlug = project.slug;
     if (project.coverStyle) imageLink.classList.add('cover-' + project.coverStyle);
-    const image = make('img', 'project-image');
-    image.src = project.image;
-    image.alt = project.imageAlt;
-    image.loading = 'lazy';
-    image.decoding = 'async';
-    image.width = 680;
-    image.height = 400;
+    const image = createProjectImage(project, 'project-image', project.imageAlt);
     const number = make('span', 'card-index', String(project.order).padStart(2, '0'));
     number.append(make('span', '', '/'), document.createTextNode(kindOf(project) === 'tool' ? 'TOOL' : 'GAME'));
     const arrow = make('span', 'cover-arrow');
@@ -184,16 +199,20 @@
     if (activeKind) url.searchParams.set('kind', activeKind);
     if (search.value.trim()) url.searchParams.set('q', search.value.trim());
     if (sort.value !== 'default') url.searchParams.set('sort', sort.value);
-    if (view === 'list') url.searchParams.set('view', view);
+    if (view !== 'grid') url.searchParams.set('view', view);
     try { history.replaceState(null, '', url); } catch (_) { /* file:// preview can still filter */ }
   }
   function updateView() {
     grid.classList.toggle('list-mode', view === 'list');
-    ['grid', 'list'].forEach(mode => {
+    grid.classList.toggle('thumbnail-mode', view === 'thumbs');
+    viewModes.forEach(mode => {
       const button = $(mode + '-view');
       button.classList.toggle('active', view === mode);
       button.setAttribute('aria-pressed', String(view === mode));
     });
+  }
+  function renderProjects() {
+    grid.replaceChildren(...visibleProjects.map(view === 'thumbs' ? createThumbnail : createCard));
   }
   function render() {
     const terms = normalise(search.value.trim()).split(/\s+/).filter(Boolean);
@@ -203,15 +222,22 @@
       const haystack = normalise([project.title, project.subtitle, project.description, ...project.tags, project.slug].join(' '));
       return terms.every(term => haystack.includes(term));
     });
-    if (sort.value.startsWith('name-')) {
+    if (sort.value === 'newest') {
+      visibleProjects.sort((a, b) => b.order - a.order);
+    } else if (sort.value.startsWith('name-')) {
       const direction = sort.value === 'name-asc' ? 1 : -1;
       visibleProjects.sort((a, b) => a.reading.localeCompare(b.reading, 'ja') * direction);
     } else if (sort.value === 'popular' && popularityState.counts) {
       visibleProjects.sort((a, b) => (openCount(b.slug) ?? 0) - (openCount(a.slug) ?? 0) || a.order - b.order);
     } else visibleProjects.sort((a, b) => a.order - b.order);
-    grid.replaceChildren(...visibleProjects.map(createCard));
+    renderProjects();
     $('empty-state').hidden = visibleProjects.length > 0;
-    $('result-count').textContent = activeTag || activeKind || terms.length ? visibleProjects.length + ' / ' + projects.length + '作品' : '全' + projects.length + '作品';
+    const resultCount = $('result-count');
+    if (activeKind === 'game' && !activeTag && !terms.length) {
+      resultCount.textContent = 'ゲーム ' + visibleProjects.length + '本';
+    } else {
+      resultCount.textContent = activeTag || activeKind || terms.length ? visibleProjects.length + ' / ' + projects.length + '作品' : '全' + projects.length + '作品';
+    }
     $('clear-search').hidden = !search.value;
     $('filter-info').hidden = !(activeTag || activeKind || terms.length);
     $('filter-summary').textContent = [activeKind ? activeKind === 'tool' ? 'ツール' : 'ゲーム' : '', activeTag ? '# ' + activeTag : '', search.value.trim() ? '「' + search.value.trim() + '」' : ''].filter(Boolean).join(' ＋ ');
@@ -259,7 +285,14 @@
   $('clear-search').addEventListener('click', () => { search.value = ''; render(); search.focus(); });
   $('reset-filters').addEventListener('click', reset);
   $('empty-reset').addEventListener('click', () => { reset(); search.focus(); });
-  ['grid', 'list'].forEach(mode => $(mode + '-view').addEventListener('click', () => { view = mode; updateView(); syncUrl(); }));
+  viewModes.forEach(mode => $(mode + '-view').addEventListener('click', () => {
+    if (view === mode) return;
+    const representationChanged = view === 'thumbs' || mode === 'thumbs';
+    view = mode;
+    if (representationChanged) renderProjects();
+    updateView();
+    syncUrl();
+  }));
   $('random-link').addEventListener('click', event => {
     if (!visibleProjects.length) { event.preventDefault(); return; }
     if (event.button === 0) assignRandomProject();
