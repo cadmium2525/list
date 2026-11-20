@@ -7,7 +7,7 @@
 .cover-portrait .project-image,.cover-app-icon .project-image{object-fit:contain}
 .cover-app-icon .project-image{padding:22px}
 .list-mode .cover-app-icon .project-image{padding:12px}
-.project-grid.thumbnail-mode{grid-template-columns:repeat(10,minmax(0,1fr));gap:clamp(3px,.6vw,8px)}
+.project-grid.thumbnail-mode{grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(3px,.6vw,8px)}
 .view-button-text{font-size:12px;font-weight:700;color:#65705e;white-space:nowrap}
 .project-thumbnail{display:block;min-width:0;aspect-ratio:1.7;border-radius:clamp(3px,.6vw,8px);background:var(--cover-color,#e2e5dd);overflow:hidden}
 .thumbnail-image{display:block;width:100%;height:100%;object-fit:cover;object-position:var(--cover-position,50% 50%)}

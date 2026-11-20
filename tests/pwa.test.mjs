@@ -62,9 +62,15 @@ test('offline navigation keeps filters and all gallery assets available',async()
   const w=await worker();
   await w.lifecycle('install');
   w.offline();
-  const response=await w.request(w.scope+'?kind=tool&tag=育成支援','navigate');
+  const response=await w.request(w.scope+'?kind=tool&tag=育成支援&view=thumbs','navigate');
   assert.equal(response.status,200);
-  assert.match(await response.text(),/CADMIUM/);
+  const html=await response.text();
+  assert.match(html,/CADMIUM/);
+  assert.match(html,/id="mascot"/);
+  for(const file of ['mascot.css','mascot.js']){
+    const asset=await w.request(new URL(file,w.scope).href);
+    assert.ok((await asset.text()).length>0,`${file} is available offline`);
+  }
   for(const p of projects){const image=await w.request(new URL(p.image,w.scope).href);assert.ok((await image.arrayBuffer()).byteLength>0);}
   assert.equal(w.networkCalls(),1,'Only the navigation tries the offline network');
 });
