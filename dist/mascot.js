@@ -9,6 +9,7 @@
   const status = mascot.querySelector('[data-mascot-status]');
   const idleCaption = caption.textContent;
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
+  const peek = document.querySelector('.mascot-peek');
   const scenes = [
     { action: 'draw', text: 'ひと筆、くるり。なにができるかな？', duration: 3100 },
     { action: 'bounce', text: 'ぴょん。……もう一回！', duration: 2500 },
@@ -19,6 +20,23 @@
   let paused = false;
   let next = 0;
   let timer;
+  let lastPeekAt = -Infinity;
+  let lastPeekY = null;
+
+  function peekOnScroll() {
+    if (document.hidden || motion.matches || paused) return;
+    if (mascot.getBoundingClientRect().bottom > 0) {
+      peek.classList.remove('is-peeking');
+      lastPeekY = null;
+      return;
+    }
+    const now = performance.now();
+    if (now - lastPeekAt < 7000) return;
+    if (lastPeekY !== null && Math.abs(scrollY - lastPeekY) < innerHeight * .55) return;
+    lastPeekY = scrollY;
+    lastPeekAt = now;
+    peek.classList.add('is-peeking');
+  }
 
   const canAutoplay = () => visible && !document.hidden && !motion.matches && !paused;
 
@@ -46,6 +64,7 @@
   }
 
   function sync() {
+    if (visible || paused || motion.matches || document.hidden) peek.classList.remove('is-peeking');
     mascot.classList.toggle('is-running', canAutoplay());
     pause.hidden = motion.matches;
     pause.textContent = paused ? '自動で動く' : '一時停止';
@@ -55,6 +74,8 @@
   }
 
   nudge.hidden = false;
+  window.addEventListener('scroll', peekOnScroll, { passive: true });
+  peek.addEventListener('animationend', () => peek.classList.remove('is-peeking'));
   nudge.addEventListener('click', () => play(true));
   pause.addEventListener('click', () => { paused = !paused; sync(); });
   document.addEventListener('visibilitychange', sync);
