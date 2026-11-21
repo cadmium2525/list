@@ -485,5 +485,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/otoyoke',
     image: 'assets/otoyoke-cover.webp', imageAlt: '紫のネオンのステージで左列に移動する棒人間と、奥から迫る床ノーツや高いバーのゲーム画面',
     color: '#e5e5f4', coverStyle: 'illustration'
+  },
+  {
+    order: 43, slug: 'katsuo', kind: 'game',
+    title: 'カツオのたたきサバイバー', reading: 'かつおのたたきさばいばー',
+    subtitle: '鰹を振るって、鯖の群れをさばけ。',
+    description: 'やたらリアルな鰹で、迫り来る鯖をぶっ叩く2.5Dサバイバー。自動攻撃と回避で魚の群れをさばき、武器を強化・進化させよう。ピンチには大量の鰹が降り注ぐ必殺技「鰹乱舞」で、さらなる生存時間を目指せ。',
+    tags: ['アクション', 'サバイバル', '3D'],
+    url: 'https://cadmium2525.github.io/katsuo/',
+    github: 'https://github.com/cadmium2525/katsuo',
+    image: 'assets/katsuo-cover.webp', imageAlt: '紺色の背景にゲームのタイトルと、銀色の腹に縞がある鰹の3Dモデル',
+    color: '#0a1626', coverStyle: 'illustration'
   }
 ];

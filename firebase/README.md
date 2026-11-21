@@ -195,3 +195,11 @@
 - 変更前 SHA256: `54ef0d16454bc4cd2dd33a9f58e27b02ba680a4ea47c7b3535910751f05b4081`
 - 変更後 SHA256: `c9525482de59c9ca0f78f663ba8dc7a5594e2e6509144bcc0b8e1c8247e6c098`
 - 公式 Rules API のコンパイル結果: エラー・警告なし。公開前後のソースを照合し、既存ルールが保たれていることを確認しました。
+
+2026-11-21: `katsuo` を43番目の集計対象に追加しました。カウンターと当日記録の許可リストの2箇所を更新しました。
+
+- 変更前 ruleset: `projects/rakugakisuma/rulesets/e9bf9336-d060-4125-8bd6-094a8ab8ed5c`
+- 変更後 ruleset: `projects/rakugakisuma/rulesets/58e63565-cd3f-42ca-b061-a0f550819287`
+- 変更前 SHA256: `c9525482de59c9ca0f78f663ba8dc7a5594e2e6509144bcc0b8e1c8247e6c098`
+- 変更後 SHA256: `9b2d3a4605cc904cf787b80b6ebf2aa594b4092d6cee311b4c3cab03ce507a9e`
+- 公式 Rules API のコンパイル結果: エラー・警告なし。公開前後のソースを照合し、既存のルールと42作品の集計条件が保たれていることを確認しました。

@@ -1,5 +1,10 @@
 # 画像と紹介文の出典
 
+## 2026-11-21 カツオのたたきサバイバー 追加
+
+- `katsuo-cover.webp` は実ゲームのタイトル文字と、タイトル画面で回転する鰹の3Dモデルです。操作メニューを外してタイトルと模型を横に並べ、960 × 564のWebPにしました。[公開ゲーム](https://cadmium2525.github.io/katsuo/)
+- 作品名と紹介文は、自動攻撃、回避、武器の強化・進化、必殺技「鰹乱舞」の説明を参照しています。[README](https://github.com/cadmium2525/katsuo/blob/10ec935c026162023865c4ed4fe18f72e3ce0d2b/README.md)
+
 ## 2026-11-19 音避け OTOYOKE 追加
 
 - `otoyoke-cover.webp` は、紫のネオンのステージで棒人間がノーツを避ける実ゲーム描画です。横幅を広げたCanvas画面 `otoyoke-production/capture/qa/slide-3.png` から棒人間と床ノーツ、高いバーが収まる部分を切り出し、960 × 564のWebPにしました。[公開ゲーム](https://cadmium2525.github.io/otoyoke/)
