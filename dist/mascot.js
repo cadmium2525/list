@@ -22,6 +22,7 @@
   let timer;
   let lastPeekAt = -Infinity;
   let lastPeekY = null;
+  const edges = ['left', 'right', 'top', 'bottom'];
 
   function peekOnScroll() {
     if (document.hidden || motion.matches || paused) return;
@@ -35,6 +36,9 @@
     if (lastPeekY !== null && Math.abs(scrollY - lastPeekY) < innerHeight * .55) return;
     lastPeekY = scrollY;
     lastPeekAt = now;
+    const choices = edges.filter(edge => edge !== peek.dataset.edge);
+    peek.dataset.edge = choices[Math.floor(Math.random() * choices.length)];
+    peek.style.setProperty('--peek-position', (12 + Math.random() * 62) + '%');
     peek.classList.add('is-peeking');
   }
 
