@@ -1,5 +1,9 @@
 # 画像と紹介文の出典
 
+## CHAIN SLASH
+
+掲載画像は[公式ゲームの画像](https://github.com/cadmium2525/issen/tree/main/assets)の screenshot-title.jpg と screenshot-chain.jpg からロゴと連鎖部分を切り出し、横長に組み合わせました。
+
 ## 2026-11-21 カツオのたたきサバイバー 追加
 
 - `katsuo-cover.webp` は実ゲームのタイトル文字と、タイトル画面で回転する鰹の3Dモデルです。操作メニューを外してタイトルと模型を横に並べ、960 × 564のWebPにしました。[公開ゲーム](https://cadmium2525.github.io/katsuo/)

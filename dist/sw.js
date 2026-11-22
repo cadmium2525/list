@@ -1,7 +1,7 @@
 'use strict';
 const SCOPE = self.registration.scope;
 const CACHE_PREFIX = 'cadmium-gallery-' + encodeURIComponent(new URL(SCOPE).pathname) + '-';
-const CACHE_NAME = CACHE_PREFIX + 'cea9daf6fd27ea4c';
+const CACHE_NAME = CACHE_PREFIX + '13849562a56f2cab';
 const PRECACHE = [
   "./",
   "./app.js",
@@ -33,6 +33,7 @@ const PRECACHE = [
   "./assets/icons/maskable-512.png",
   "./assets/infographic-cover.webp",
   "./assets/ishikoro-cover.webp",
+  "./assets/issen-cover.webp",
   "./assets/kanji-tower-cover.webp",
   "./assets/katsuo-cover.webp",
   "./assets/leaf-stream-cover.webp",

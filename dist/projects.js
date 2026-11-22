@@ -496,5 +496,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/katsuo',
     image: 'assets/katsuo-cover.webp', imageAlt: '紺色の背景にゲームのタイトルと、銀色の腹に縞がある鰹の3Dモデル',
     color: '#0a1626', coverStyle: 'illustration'
+  },
+  {
+    order: 44, slug: 'issen', kind: 'game',
+    title: 'CHAIN SLASH', reading: 'ちぇいんすらっしゅ',
+    subtitle: '一太刀から、百連鎖へ。',
+    description: '敵が迫るなか、時間を止めて一筆の斬撃ルートを描く60秒のスコアアタック。爆弾型や雷撃型を斬り、爆発と電撃を隣の敵へつないで大連鎖を狙おう。',
+    tags: ['アクション', 'スコアアタック', '連鎖'],
+    url: 'https://cadmium2525.github.io/issen/',
+    github: 'https://github.com/cadmium2525/issen',
+    image: 'assets/issen-cover.webp', imageAlt: 'CHAIN SLASHのロゴと、斬撃からオレンジ色の爆発が連鎖するゲーム画面',
+    color: '#0c101b', coverStyle: 'illustration'
   }
 ];
