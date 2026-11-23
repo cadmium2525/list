@@ -1,5 +1,9 @@
 # 画像と紹介文の出典
 
+## 天空パルクール SKY STAIRS RUSH
+
+[ゲーム本体](https://cadmium2525.github.io/parkour/)のタイトル画面を横長で収録し、メニューボタンを非表示にしてロゴと大階段を掲載画像にしました。
+
 ## CHAIN SLASH
 
 掲載画像は[公式ゲームの画像](https://github.com/cadmium2525/issen/tree/main/assets)の screenshot-title.jpg と screenshot-chain.jpg からロゴと連鎖部分を切り出し、横長に組み合わせました。

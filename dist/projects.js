@@ -507,5 +507,16 @@ window.CADMIUM_PROJECTS = [
     github: 'https://github.com/cadmium2525/issen',
     image: 'assets/issen-cover.webp', imageAlt: 'CHAIN SLASHのロゴと、斬撃からオレンジ色の爆発が連鎖するゲーム画面',
     color: '#0c101b', coverStyle: 'illustration'
+  },
+  {
+    order: 45, slug: 'parkour', kind: 'game',
+    title: '天空パルクール SKY STAIRS RUSH', reading: 'てんくうぱるくーるすかいすてあーずらっしゅ',
+    subtitle: '山の大階段を駆け降りろ！',
+    description: '山の大階段を駆け降りる3Dパルクールのタイムアタック。ジャンプ、宙返り、スライディングで障害物をかわしてコンボをつなぎ、虹色のフィーバーで障害物を吹き飛ばそう。',
+    tags: ['アクション', 'タイムアタック', '3D'],
+    url: 'https://cadmium2525.github.io/parkour/',
+    github: 'https://github.com/cadmium2525/parkour',
+    image: 'assets/parkour-cover.webp', imageAlt: '霧が漂う山々の間にのびる大階段と、天空パルクールのタイトル',
+    color: '#233641', coverStyle: 'illustration'
   }
 ];
