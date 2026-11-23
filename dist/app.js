@@ -72,16 +72,6 @@
     }
     notice.textContent = description + (status ? ' ' + status : '');
   }
-  function assignRandomProject() {
-    const link = $('random-link');
-    if (!visibleProjects.length) {
-      delete link.dataset.openSlug;
-      return;
-    }
-    const project = visibleProjects[Math.floor(Math.random() * visibleProjects.length)];
-    link.href = project.url;
-    link.dataset.openSlug = project.slug;
-  }
   function recordOpenFromEvent(event) {
     if ((event.type === 'click' && event.button !== 0) || (event.type === 'auxclick' && event.button !== 1) || event.defaultPrevented) return;
     const link = event.target.closest('a[data-open-slug]');
@@ -241,8 +231,6 @@
     $('clear-search').hidden = !search.value;
     $('filter-info').hidden = !(activeTag || activeKind || terms.length);
     $('filter-summary').textContent = [activeKind ? activeKind === 'tool' ? 'ツール' : 'ゲーム' : '', activeTag ? '# ' + activeTag : '', search.value.trim() ? '「' + search.value.trim() + '」' : ''].filter(Boolean).join(' ＋ ');
-    $('random-link').setAttribute('aria-disabled', String(!visibleProjects.length));
-    assignRandomProject();
     updatePopularityNotice();
     renderFilters();
     updateView();
@@ -293,14 +281,9 @@
     updateView();
     syncUrl();
   }));
-  $('random-link').addEventListener('click', event => {
-    if (!visibleProjects.length) { event.preventDefault(); return; }
-    if (event.button === 0) assignRandomProject();
-  });
   document.addEventListener('click', recordOpenFromEvent);
   document.addEventListener('auxclick', recordOpenFromEvent);
   $('copyright-year').textContent = String(new Date().getFullYear());
-  $('work-total').textContent = String(projects.length).padStart(2, '0') + ' LITTLE DISCOVERIES';
   render();
   popularity?.subscribe(state => {
     popularityState = state;

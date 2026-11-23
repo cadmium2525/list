@@ -66,7 +66,7 @@ test('offline navigation keeps filters and all gallery assets available',async()
   assert.equal(response.status,200);
   const html=await response.text();
   assert.match(html,/CADMIUM/);
-  assert.match(html,/id="mascot"/);
+  assert.match(html,/id="project-grid"/);
   for(const file of ['mascot.css','mascot.js']){
     const asset=await w.request(new URL(file,w.scope).href);
     assert.ok((await asset.text()).length>0,`${file} is available offline`);
